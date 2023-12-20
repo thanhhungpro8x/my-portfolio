@@ -1,13 +1,143 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+:root {
+  --primary_color: #28e98c;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  color: #999999;
+  background: #f4efef;
+  line-height: 1.7;
+  overflow-x: hidden;
+  height: 100vh;
+} */
+/* 
+.bgWhite {
+  background: #fff;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.textToRight {
+  text-align: right;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contentWidth {
+  max-width: 770px;
+  width: 100%;
+  margin-left: auto;
+}
+.themeBtn {
+  background: var(--primary_color);
+  color: #000000;
+  display: block;
+  text-align: center;
+  padding: 11px 58px 10px 58px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 30px;
+  justify-content: center;
+  text-transform: uppercase;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 2px solid var(--primary_color);
+  text-decoration: none;
+}
+.themeBtn i {
+  font-size: 24px;
+  margin-right: 10px;
+  display: block;
+  margin-bottom: 3px;
+}
+.themeBtn:hover {
+  background: none;
+  color: var(--primary_color);
+}
+.customContainer {
+  max-width: 1130px;
+  padding: 0 15px;
+  margin: auto;
+}
+.subtitle {
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+  border: 1px solid #565656;
+  padding: 9px 20px;
+  border-radius: 30px;
+  margin-bottom: 53px;
+  display: inline-flex;
+  align-items: center;
+}
+.subtitle div {
+  margin-bottom: 1px;
+  font-size: 14px;
+  margin-right: 10px;
+} */
+
+/* .pageLoader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+/* .pageLoader .bounceball {
+  position: relative;
+  display: inline-block;
+  height: 37px;
+  width: 15px;
+} */
+/* .pageLoader .bounceball:before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform-origin: 50%;
+  animation: bounceLoader 500ms alternate infinite ease;
+} */
+
+/* .pageSection {
+  overflow: hidden;
+} */

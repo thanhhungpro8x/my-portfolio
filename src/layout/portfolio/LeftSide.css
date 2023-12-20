@@ -1,0 +1,79 @@
+.leftSidebar {
+  max-width: 485px;
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid #565656;
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 50px;
+  z-index: 10;
+}
+.LeftMain .leftSidebar {
+  display: none;
+}
+.leftSidebar > div > img.myPhoto {
+  border-radius: 30px;
+  display: block;
+  margin-bottom: 56px;
+}
+.leftSidebar .leftSidebarHeader {
+  margin-bottom: 65px;
+}
+.leftSidebar .leftSidebarHeader .designation {
+  max-width: 110px;
+  text-align: right;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+.leftSidebar h2 {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+}
+.leftSidebar .address {
+  margin-bottom: 30px;
+}
+.leftSidebar .copyright {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.leftSidebar .socialMediaProfile {
+  gap: 8px;
+  margin-bottom: 118px;
+}
+.leftSidebar .socialMediaProfile li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 46px;
+  text-align: center;
+  border: 2px solid #565656;
+  border-radius: 50%;
+  color: #999999;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.leftSidebar .socialMediaProfile li a:hover {
+  color: var(--primary_color);
+  border-color: var(--primary_color);
+}
+.leftSidebar .themeBtn {
+  width: 100%;
+}
+
+.logoHeader {
+  height: 36px;
+  width: 128px;
+  object-fit: cover;
+}
+
+.myPhoto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

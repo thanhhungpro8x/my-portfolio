@@ -1,0 +1,84 @@
+/* My Project */
+/* .iconStatic {
+  object-fit: cover;
+  width: 28px;
+  max-width: 30%;
+  height: 28px;
+  max-height: 30%;
+} */
+
+.portfolioArea {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.portfolioItems .portfolioItem {
+  margin-bottom: 62px;
+}
+.portfolioItems > div:last-child .portfolioItem {
+  margin-bottom: 0;
+}
+.portfolioItems .portfolioItem .portfolioItemInner {
+  height: 370px;
+  overflow: hidden;
+  border-radius: 30px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.portfolioItems .portfolioItem.portfolioFull .portfolioItemInner {
+  height: 410px;
+}
+.portfolioItems .portfolioItem .portfolioItemInner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.portfolioItems .portfolioItem .portfolioItemInner .portfolioCategories {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  bottom: 10px;
+  left: 20px;
+}
+.portfolioItems .portfolioItem .portfolioItemInner .portfolioCategories li a {
+  display: block;
+  font-size: 14px;
+  background: #391818;
+  color: #47e716;
+  padding: 7px 10px;
+  border-radius: 19px;
+  transition: 0.3s;
+}
+.portfolioItems
+  .portfolioItem:hover
+  .portfolioItemInner
+  .portfolioCategories
+  li
+  a {
+  background: #1f1f1f;
+  color: #fff;
+}
+.portfolioItems .portfolioItem h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+}
+.portfolioItems .portfolioItem h2 a {
+  color: #fff;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+.portfolioItems .portfolioItem:hover h2 a {
+  border-color: #ffffff;
+}
+
+.portfolioItemInner a {
+  text-decoration: none !important;
+}
+
+h2 a {
+  text-decoration: none !important;
+}

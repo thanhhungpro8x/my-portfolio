@@ -1,0 +1,121 @@
+/* Contact Me */
+.contactMeArea {
+  padding-bottom: 50px;
+}
+.contactMeArea .contactMeContent h3 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+.contactMeArea .contactMeContent #requiredMsg {
+  color: #fc4545;
+  font-size: 14px;
+  margin-bottom: 31px;
+  display: none;
+}
+.contactMeArea .contactMeContent #requiredMsg.show {
+  display: block;
+}
+.contactMeArea .contactMeContent .contactForm .inputFieldGroup {
+  margin-bottom: 34px;
+}
+.contactMeArea .contactMeContent .contactForm .inputFieldGroup label {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 2px;
+}
+.contactMeArea .contactMeContent .contactForm .inputFieldGroup label sup {
+  color: #fc4545;
+  font-size: 12px;
+  top: 0;
+}
+.contactMeArea .contactMeContent .contactForm .inputFieldGroup label span {
+  color: #999999;
+  text-transform: none;
+}
+.contactMeArea .contactMeContent .contactForm .inputFieldGroup select,
+.contactMeArea .contactMeContent .contactForm .inputFieldGroup textarea,
+.contactMeArea .contactMeContent .contactForm .inputFieldGroup input {
+  display: block;
+  color: #666666;
+  width: 100%;
+  border: none;
+  background: none;
+  font-size: 18px;
+  padding: 0;
+  transition: 0.2s;
+  padding-bottom: 3px;
+}
+.contactMeArea .contactMeContent .contactForm .inputFieldGroup textarea {
+  height: 140px;
+  border-bottom: 1px solid #555555;
+  resize: none;
+}
+.contactMeArea .contactMeContent .contactForm .inputFieldGroup select {
+  display: block;
+  margin-left: -5px !important;
+  font-weight: 300;
+}
+.contactMeArea .contactMeContent .contactForm .inputFieldGroup select:focus,
+.contactMeArea .contactMeContent .contactForm .inputFieldGroup textarea:focus,
+.contactMeArea .contactMeContent .contactForm .inputFieldGroup input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #555555;
+}
+.contactMeArea
+  .contactMeContent
+  .contactForm
+  .inputFieldGroup
+  textarea::placeholder,
+.contactMeArea
+  .contactMeContent
+  .contactForm
+  .inputFieldGroup
+  input::placeholder {
+  color: #666666;
+}
+.contactMeArea
+  .contactMeContent
+  .contactForm
+  .inputFieldGroup.uploadAttachmentField {
+  position: relative;
+}
+.contactMeArea
+  .contactMeContent
+  .contactForm
+  .inputFieldGroup.uploadAttachmentField
+  label {
+  overflow: hidden;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.contactMeArea
+  .contactMeContent
+  .contactForm
+  .inputFieldGroup.uploadAttachmentField
+  label
+  i {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 2px;
+}
+.contactMeArea
+  .contactMeContent
+  .contactForm
+  .inputFieldGroup.uploadAttachmentField
+  input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.contactMeArea .contactMeContent .contactForm .inputFieldGroup.submitBtnWrap {
+  margin-bottom: 0;
+  margin-top: 18px;
+}

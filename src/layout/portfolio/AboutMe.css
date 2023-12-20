@@ -1,0 +1,8 @@
+.aboutMeArea {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.aboutMeArea .aboutMeContent p {
+  line-height: 30px;
+  max-width: 610px;
+}

@@ -1,0 +1,278 @@
+@media (max-width: 2000px) {
+  .leftSidebar {
+    max-width: 400px;
+  }
+  .leftSidebar .leftSidebarHeader {
+    margin-bottom: 30px;
+  }
+  .leftSidebar .socialMediaProfile {
+    margin-bottom: 30px;
+  }
+  .leftSidebar .copyright {
+    margin-bottom: 25px;
+  }
+  .menu {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 1555px) {
+  .leftSidebar {
+    max-width: 350px;
+    padding: 30px;
+  }
+  .leftSidebar > img.myPhoto {
+    width: 100%;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 46px;
+  }
+  .leftSidebar .leftSidebarHeader .designation {
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 1220px) {
+  .customContainer {
+    max-width: 767px;
+  }
+  .contentWidth {
+    max-width: 100%;
+  }
+  .sectionHeader h1 br {
+    display: none;
+  }
+  .leftSidebar {
+    position: relative;
+    max-width: 767px;
+    left: 0;
+    margin: auto;
+    top: 0;
+    transform: translateY(0);
+    margin-top: 20px;
+    display: none;
+  }
+
+  .doanPortfolioMain .leftSidebar {
+    display: block;
+  }
+  .leftSidebar > img.me {
+    width: auto;
+  }
+  .iconMenuRight {
+    position: fixed;
+  }
+  .menu {
+    display: none !important;
+  }
+  .responsiveSidebarMenu .sidebarMenuInner .menuWrap .menu {
+    display: flex !important;
+  }
+  .resumeArea,
+  .aboutMeArea {
+    padding-bottom: 50px;
+  }
+  .aboutMeArea .aboutMeContent p {
+    max-width: 100%;
+  }
+  .verifiedMeArea {
+    padding-top: 50px;
+  }
+
+  .myServicesItems {
+    display: flex;
+    gap: 15px;
+  }
+  .myServicesItems .myServiceItem {
+    margin-bottom: 0;
+    padding: 30px 30px 30px 30px;
+    width: 33.3333%;
+  }
+  .myServicesItems .myServiceItem h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .myServicesItems .myServiceItem p {
+    margin-bottom: 25px;
+  }
+  .myServicesItems .myServiceItem div {
+    font-size: 20px;
+    top: 25px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 787px) {
+  .introduceSection .introduceContent h1 {
+    font-size: 58px;
+    line-height: 1.3;
+  }
+  .introduceSection .introduceContent .facts h1 {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 767px) {
+  .iconMenuRight {
+    right: 30px;
+    top: 30px;
+  }
+  .introduceSection .introduceContent .moveToProjectBtn {
+    margin-left: 0;
+  }
+  .mySkillsArea .mySkillsContent .row .col-md-3 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .contactMeArea .contactMeContent h3 {
+    margin-bottom: 50px;
+  }
+  .portfolioHeaderArea .customContainer .row .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  .portfolioHeaderArea .portfolioheaderRight .showMenuToggle {
+    display: flex;
+  }
+  .portfolioHeaderArea .portfolioheaderRight nav {
+    position: fixed;
+    right: 0;
+    max-width: 350px;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background: #1f1f1f;
+    padding: 60px 40px 40px 40px;
+    overflow-x: hidden;
+    top: 0;
+    margin-right: -300px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .portfolioHeaderArea .portfolioheaderRight nav.active {
+    opacity: 1;
+    margin-right: 0;
+    visibility: visible;
+  }
+  .portfolioHeaderArea nav .portfolioNavMenu li + li {
+    margin-top: 10px;
+  }
+  .portfolioHeaderArea .portfolioheaderRight nav .portfolioNavMenu {
+    display: block;
+  }
+  .portfolioHeaderArea nav .closeMenuRight {
+    display: block;
+  }
+  .portfolioHeaderArea nav .portfolioNavMenu li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .portfolioHeaderArea nav .portfolioNavMenu li a {
+    flex: 1;
+  }
+  .portfolioHeaderArea nav .portfolioNavMenu li .dropdown {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    display: none;
+  }
+  .portfolioHeaderArea nav .portfolioNavMenu li .dropdown li a {
+    font-size: 14px;
+  }
+  .portfolioHeaderArea nav .portfolioNavMenu li .dropdown li {
+    margin: 0;
+  }
+  .portfolioHeaderArea nav .portfolioNavMenu li .toggleSubDropdown,
+  .portfolioHeaderArea nav .portfolioNavMenu li .toggleDropdown {
+    display: block;
+  }
+  .portfolioHeaderArea nav .portfolioNavMenu li .dropdown li .dropdown {
+    padding-left: 15px;
+    left: 0;
+  }
+  .portfolioHeaderArea nav .portfolioNavMenu li.active > .dropdown {
+    display: block;
+  }
+  .customGlobalColor .inner .customGlobalColorOption h2 {
+    margin-bottom: 60px;
+  }
+  .customGlobalColor .inner .customGlobalColorOption {
+    padding: 100px 50px;
+  }
+  .customGlobalColor .customGlobalColorOption .colorBoxed {
+    margin-bottom: 50px;
+    padding-top: 10px;
+  }
+  .customGlobalColor
+    .inner
+    .customGlobalColorOption
+    .customGlobalColorOptionInner
+    .themes {
+    padding-top: 10px;
+  }
+  .customGlobalColor
+    .inner
+    .customGlobalColorOption
+    .customGlobalColorOptionInner
+    .themes
+    li {
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+  .myServicesItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .myServicesItems .myServiceItem {
+    width: 100%;
+  }
+}
+@media (max-width: 584px) {
+  .subtitle {
+    margin-bottom: 40px;
+  }
+  .sectionHeader h1 {
+    font-size: 38px;
+    line-height: 1.4;
+  }
+  .mySkillsArea,
+  .myServicesArea,
+  .resumeArea,
+  .aboutMeArea,
+  .introduceSection {
+    padding-bottom: 0;
+  }
+  .introduceSection .introduceContent h1 {
+    font-size: 50px;
+  }
+  .introduceSection .introduceContent .facts h1 {
+    font-size: 48px;
+    margin-bottom: 25px;
+  }
+  .introduceSection .introduceContent .facts p br {
+    display: none;
+  }
+  .introduceSection .introduceContent .facts {
+    gap: 20px;
+  }
+  .resumeArea .resumeContent .resumeTimeline .item {
+    padding-left: 50px;
+  }
+  .myServicesItems {
+    grid-template-columns: 1fr;
+  }
+  .portfolioArea {
+    padding-top: 40px;
+  }
+  .clientsLogos .row .col-md-3 {
+    width: 50%;
+  }
+  .contactMeArea {
+    padding-bottom: 80px;
+  }
+}

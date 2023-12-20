@@ -1,0 +1,66 @@
+/* Resume */
+.resumeArea {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.resumeArea .resumeContent .resumeTimeline .item {
+  position: relative;
+  padding-left: 74px;
+  padding-bottom: 68px;
+}
+.resumeArea .resumeContent .resumeTimeline .item:last-child {
+  padding-bottom: 0;
+}
+.resumeArea .resumeContent .resumeTimeline .item:last-child::after {
+  height: calc(100% - 10px);
+}
+.resumeArea .resumeContent .resumeTimeline .item::after {
+  content: "";
+  background: #333333;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  z-index: -1;
+}
+.resumeArea .resumeContent .resumeTimeline .item::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #656565;
+  border-radius: 50%;
+  left: -6px;
+  top: 7px;
+  transition: 0.3s;
+}
+.resumeArea .resumeContent .resumeTimeline .item .date {
+  display: block;
+  margin-bottom: 28px;
+  transition: 0.3s;
+}
+.resumeArea .resumeContent .resumeTimeline .item h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  color: #fff;
+}
+.resumeArea .resumeContent .resumeTimeline .item h2 a {
+  color: #fff;
+  display: block;
+}
+.resumeArea .resumeContent .resumeTimeline .item p {
+  font-size: 13px;
+  color: #999999;
+  margin-bottom: 18px;
+}
+.resumeArea .resumeContent .resumeTimeline .item p:last-child {
+  margin-bottom: 0;
+}
+.resumeArea .resumeContent .resumeTimeline .item:hover::before {
+  background: var(--primary_color);
+}
+.resumeArea .resumeContent .resumeTimeline .item:hover .date {
+  color: var(--primary_color);
+}

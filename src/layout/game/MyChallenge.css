@@ -1,0 +1,178 @@
+.myChallengeContainer {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+}
+
+.gameContainer {
+  /* gap: 10vh;
+  display: flex;
+  flex-direction: column; */
+}
+
+.fixedBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./../../asset/bg/parismycity.jpg") center/cover no-repeat
+    fixed;
+}
+
+.section {
+  height: 99vh; /* Each section takes 90% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* border: solid 1px; */
+  color: #fff;
+  filter: brightness(1.5);
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-bottom: 5vh;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+}
+
+.section > h1 {
+  width: 80%;
+  color: #fff;
+  display: flex;
+  opacity: 1;
+  align-items: center;
+  justify-content: center;
+  text-align: -webkit-center;
+  margin-bottom: 20vh;
+}
+
+.section .gameArea {
+  width: 80%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.iconStatic {
+  object-fit: cover;
+  width: 100px !important;
+  max-width: 100% !important;
+  height: 100px !important;
+  max-height: 100% !important;
+}
+
+.moveIcon {
+  cursor: pointer;
+  z-index: 20;
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  width: 200px;
+  height: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #083657; /* Set the background color of your button */
+  color: #fff; /* Set the text color of your button */
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.playButton:hover {
+  background-color: #1f1f1f;
+}
+
+/* a {
+  text-decoration: none;
+}
+.textToRight {
+  text-align: right;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} */
+
+/* 01 - Menu */
+.menu {
+  flex-direction: column;
+  border: 1px solid #c8c4c4;
+  border-radius: 30px;
+  position: fixed;
+  right: 50px;
+  top: 480px;
+  /* width: 55px; */
+  text-align: center;
+  gap: 20px;
+  padding: 24px 0;
+  background: #1f1f1f;
+  z-index: 20;
+}
+.menu li .scrollTo,
+.menu li a {
+  display: block;
+  position: relative;
+  /* padding: 10px 10px; */
+  width: 55px;
+  transition: 0.3s;
+  color: #999999;
+  cursor: pointer;
+}
+.menu li a.active,
+.menu li a:hover,
+.menu li .scrollTo.active,
+.menu li .scrollTo:hover {
+  color: var(--primary_color);
+}
+.menu li .scrollTo:hover span,
+.menu li a:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+.menu li .scrollTo i,
+.menu li a i {
+  font-size: 20px;
+  display: block;
+}
+.menu li .scrollTo span,
+.menu li a span {
+  position: absolute;
+  transition: 0.3s;
+  font-size: 12px;
+  background: #404042;
+  right: 100%;
+  color: #fff;
+  display: block;
+  padding: 3px 8px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+}
+.menu li .scrollTo span::before,
+.menu li a span::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #404042;
+  position: absolute;
+  right: -3px;
+  top: 50%;
+  transform: rotate(54deg) skew(-8deg, -39deg);
+  margin-top: -5px;
+  z-index: -1;
+}

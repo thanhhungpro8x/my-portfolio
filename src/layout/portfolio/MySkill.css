@@ -1,0 +1,33 @@
+/* Skills */
+.mySkillsArea {
+  padding-top: 90px;
+  padding-bottom: 40px;
+}
+.skills .skill {
+  margin-bottom: 50px;
+}
+.skills .skill .mySkillInner {
+  border: 2px solid #565656;
+  border-radius: 85px;
+  padding: 54px 0 48px 0;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+.skills .skill:hover .mySkillInner {
+  border-color: var(--primary_color);
+}
+.skills .skill .mySkillInner img {
+  display: block;
+  margin: auto auto 29px auto;
+}
+.skills .skill .mySkillInner h1 {
+  font-size: 30px;
+  color: var(--primary_color);
+  font-weight: 300;
+  margin: 0;
+}
+.skills .skill p {
+  font-size: 14px;
+  color: #fff;
+  margin: 0;
+}

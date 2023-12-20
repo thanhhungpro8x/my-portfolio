@@ -1,0 +1,53 @@
+/* Services */
+.myServicesArea {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.myServicesItems .myServiceItem {
+  border: 1px solid #565656;
+  border-radius: 20px;
+  transition: 0.3s;
+  position: relative;
+  padding: 44px 48px 41px 48px;
+  margin-bottom: 10px;
+}
+.myServicesItems .myServiceItem:last-child {
+  margin-bottom: 0;
+}
+.myServicesItems .myServiceItem h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.myServicesItems .myServiceItem h2 a {
+  color: #fff;
+  transition: 0.3s;
+}
+.myServicesItems .myServiceItem:hover {
+  border-color: var(--primary_color);
+}
+.myServicesItems .myServiceItem:hover h2 a {
+  color: var(--primary_color);
+}
+.myServicesItems .myServiceItem p {
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 30px;
+}
+.myServicesItems .myServiceItem .projects {
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.myServicesItems .myServiceItem:hover .projects {
+  text-decoration: underline;
+}
+.myServicesItems .myServiceItem div > * {
+  position: absolute;
+  /* font-size: 30px; */
+  color: var(--primary_color);
+  /* top: 45px; */
+  right: 50px;
+}

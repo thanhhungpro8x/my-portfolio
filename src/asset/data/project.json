@@ -1,0 +1,168 @@
+{
+  "projectHeaderName": "My Projects",
+  "projectTitle1": "Featured",
+  "projectTitle2": "Projects",
+  "datas": [
+    {
+      "projectName": "Dispatch Software - Dispatching the Technicians",
+      "projectSite": "https://www.servicepower.com",
+      "aos": "fade-up",
+      "techStack": [
+        {
+          "name": "Java & Spring Framework",
+          "link": "https://spring.io/projects/spring-framework"
+        },
+        {
+          "name": "Oracle DB/PL-SQL",
+          "link": "https://www.oracle.com/database/"
+        },
+        {
+          "name": "Rest API",
+          "link": "https://en.wikipedia.org/wiki/REST"
+        }
+      ],
+      "albumName": "Dispatch System",
+      "images": [
+        { "name": "dispatch-project1.png" },
+        { "name": "dispatch-project2.png" },
+        { "name": "dispatch-project3.webp" }
+      ]
+    },
+    {
+      "projectName": "BelgaBox is a 'digital toolbox' for professional journalists",
+      "projectSite": "https://www.belgabox.be/",
+      "aos": "fade-right",
+      "techStack": [
+        {
+          "name": "Java & Spring Framework",
+          "link": "https://spring.io/projects/spring-framework"
+        },
+        {
+          "name": "Oracle DB/PL-SQL",
+          "link": "https://www.oracle.com/database/"
+        },
+        {
+          "name": "Rest API",
+          "link": "https://en.wikipedia.org/wiki/REST"
+        },
+        {
+          "name": "Bootstrap & Datatables",
+          "link": "https://datatables.net/examples/styling/bootstrap5.html"
+        }
+      ],
+      "albumName": "BelgaBox",
+      "images": [
+        { "name": "belga-1.png" },
+        { "name": "belga-2.png" },
+        { "name": "belga-3.png" }
+      ]
+    },
+    {
+      "projectName": "  Nordnet – société du groupe Orange",
+      "projectSite": "https://www.nordnet.com/",
+      "aos": "fade-left",
+      "techStack": [
+        {
+          "name": "Java & Spring Framework",
+          "link": "https://spring.io/projects/spring-framework"
+        },
+        {
+          "name": "Oracle DB/PL-SQL",
+          "link": "https://www.oracle.com/database/"
+        },
+        {
+          "name": "Rest API",
+          "link": "https://en.wikipedia.org/wiki/REST"
+        },
+        {
+          "name": "MicroServices",
+          "link": "https://microservices.io/"
+        },
+        {
+          "name": "CI/CD/Jira with Bamboo",
+          "link": "https://www.atlassian.com/software/bamboo"
+        },
+        {
+          "name": "Nagios Monitoring",
+          "link": "https://www.nagios.org/"
+        },
+        {
+          "name": "Kong API Gateway",
+          "link": "https://konghq.com/"
+        }
+      ],
+      "albumName": "NordNet",
+      "images": [
+        { "name": "nordnet-1.png" },
+        { "name": "nordnet-2.png" },
+        { "name": "nordnet-3.png" }
+      ]
+    },
+    {
+      "projectName": "SCOR - Un réassureur indépendant global",
+      "projectSite": "https://www.scor.com/fr",
+      "aos": "fade-up",
+      "techStack": [
+        {
+          "name": "Java & Spring Framework",
+          "link": "https://spring.io/projects/spring-framework"
+        },
+        {
+          "name": "Oracle DB/PL-SQL",
+          "link": "https://www.oracle.com/database/"
+        },
+        {
+          "name": "Rest API",
+          "link": "https://en.wikipedia.org/wiki/REST"
+        },
+        {
+          "name": "MicroServices",
+          "link": "https://microservices.io/"
+        },
+        {
+          "name": "Jenkins CI/CD",
+          "link": "https://www.jenkins.io/"
+        },
+        {
+          "name": "Angular 6",
+          "link": "https://angular.io/"
+        }
+      ],
+      "albumName": "SCOR",
+      "images": [
+        { "name": "scor-1.png" },
+        { "name": "scor-2.png" },
+        { "name": "scor-3.png" }
+      ]
+    },
+    {
+      "projectName": "ANN Nails Versailles",
+      "projectSite": "https://www.annnails.fr/",
+      "aos": "fade-right",
+      "techStack": [
+        {
+          "name": "ExpressJS",
+          "link": "https://expressjs.com/"
+        },
+        {
+          "name": "MySQL",
+          "link": "https://www.mysql.com/"
+        },
+        {
+          "name": "Prisma ORM",
+          "link": "https://www.prisma.io/"
+        },
+        {
+          "name": "ReactJS",
+          "link": "https://react.dev/"
+        }
+      ],
+      "albumName": "ANN Shop",
+      "images": [
+        { "name": "ann-1.png" },
+        { "name": "ann-2.png" },
+        { "name": "ann-3.png" }
+      ]
+    }
+  ]
+}

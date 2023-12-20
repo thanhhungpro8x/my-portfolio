@@ -1,0 +1,172 @@
+/* Header */
+.portfolioHeaderArea {
+  background: #1f1f1f;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 25px 0;
+}
+.portfolioHeaderArea .logo {
+  display: block;
+}
+.portfolioHeaderArea .logo img {
+  display: block;
+}
+.portfolioHeaderArea nav {
+  transition: 0.3s;
+}
+.portfolioHeaderArea nav .portfolioNavMenu {
+  gap: 25px;
+  display: flex;
+}
+.portfolioHeaderArea nav .portfolioNavMenu li {
+  position: relative;
+}
+.portfolioHeaderArea nav .portfolioNavMenu li .toggleSubDropdown,
+.portfolioHeaderArea nav .portfolioNavMenu li .toggleDropdown {
+  display: none;
+  width: 35px;
+  text-align: center;
+}
+.portfolioHeaderArea nav .portfolioNavMenu li .dropdown {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: #000;
+  box-shadow: 1px 6px 20px rgb(0 0 0 / 20%);
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  padding: 5px 0;
+}
+.portfolioHeaderArea nav .portfolioNavMenu li .dropdown li a {
+  padding: 8px 15px;
+  line-height: 1.2;
+}
+.portfolioHeaderArea nav .portfolioNavMenu li:hover > .dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+.portfolioHeaderArea nav .portfolioNavMenu li .dropdown li .dropdown {
+  left: 100%;
+  top: 0;
+}
+.portfolioHeaderArea nav .portfolioNavMenu li a {
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  padding: 8px 0;
+}
+.portfolioHeaderArea nav .portfolioNavMenu li a:hover {
+  color: var(--primary_color);
+}
+.portfolioHeaderArea .portfolioheaderRight .showMenuToggle {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid rgb(255 255 255 / 30%);
+  margin-left: auto;
+}
+.portfolioHeaderArea nav .closeMenuRight {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Section Header */
+.sectionHeader h1 {
+  font-size: 48px;
+  line-height: 60px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 33px;
+}
+.sectionHeader h1 span {
+  color: var(--primary_color);
+}
+
+/* Common */
+
+.bgWhite {
+  background: #fff;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.textToRight {
+  text-align: right;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contentWidth {
+  max-width: 770px;
+  width: 100%;
+  margin-left: auto;
+}
+.themeBtn {
+  background: var(--primary_color);
+  color: #000000;
+  display: block;
+  text-align: center;
+  padding: 11px 58px 10px 58px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 30px;
+  justify-content: center;
+  text-transform: uppercase;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 2px solid var(--primary_color);
+  text-decoration: none;
+}
+.themeBtn i {
+  font-size: 24px;
+  margin-right: 10px;
+  display: block;
+  margin-bottom: 3px;
+}
+.themeBtn:hover {
+  background: none;
+  color: var(--primary_color);
+}
+.customContainer {
+  max-width: 1130px;
+  padding: 0 15px;
+  margin: auto;
+}
+.subtitle {
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+  border: 1px solid #565656;
+  padding: 9px 20px;
+  border-radius: 30px;
+  margin-bottom: 53px;
+  display: inline-flex;
+  align-items: center;
+}
+.subtitle div {
+  margin-bottom: 1px;
+  font-size: 14px;
+  margin-right: 10px;
+}

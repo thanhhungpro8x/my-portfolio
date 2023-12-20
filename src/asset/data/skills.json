@@ -1,0 +1,67 @@
+{
+  "skillsHeaderName": "my skills",
+  "skillsTitle1": "My ",
+  "skillsTitle2": "Advantages",
+  "datas": [
+    {
+      "skillName": "Java",
+      "skillIconName": "java-icon.png",
+      "skillLevel": "95%",
+      "aos": "fade-right"
+    },
+    {
+      "skillName": "Spring Framework & Springboot",
+      "skillIconName": "springframework2-icon.png",
+      "skillLevel": "90%",
+      "aos": "fade-up"
+    },
+    {
+      "skillName": "Hibernate && JPA && Liquibase",
+      "skillIconName": "hibernate-icon.png",
+      "skillLevel": "90%",
+      "aos": "fade-down"
+    },
+    {
+      "skillName": "Database Oracle/Mysql/MSSQL/NOSQL",
+      "skillIconName": "database-icon.png",
+      "skillLevel": "90%",
+      "aos": "fade-left"
+    },
+    {
+      "skillName": "Javascript & React & Angular & ExpressJS",
+      "skillIconName": "react-icon.png",
+      "skillLevel": "60%",
+      "aos": "fade-right"
+    },
+    {
+      "skillName": "Docker & Docker Compose & Kubernetes",
+      "skillIconName": "docker-icon.png",
+      "skillLevel": "70%",
+      "aos": "fade-up"
+    },
+    {
+      "skillName": "System Design & Micro Services",
+      "skillIconName": "systemdesign-icon.png",
+      "skillLevel": "90%",
+      "aos": "fade-down"
+    },
+    {
+      "skillName": "Continuous Integration & Delivery",
+      "skillIconName": "jenkins-icon.png",
+      "skillLevel": "80%",
+      "aos": "fade-left"
+    },
+    {
+      "skillName": "Agile & Scrums Modelling",
+      "skillIconName": "scrums-icon.png",
+      "skillLevel": "90%",
+      "aos": "fade-right"
+    },
+    {
+      "skillName": "Teamwork & Communication",
+      "skillIconName": "teamwork-icon.png",
+      "skillLevel": "90%",
+      "aos": "fade-up"
+    }
+  ]
+}

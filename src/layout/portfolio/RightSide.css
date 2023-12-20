@@ -1,0 +1,209 @@
+/* Icon Menu */
+.iconMenuRight {
+  position: absolute;
+  right: 68px;
+  top: 60px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #575757;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #1f1f1f;
+  z-index: 99;
+}
+.iconMenuRight span {
+  width: 20px;
+  display: block;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+.iconMenuRight:hover {
+  border-color: var(--primary_color);
+}
+.iconMenuRight:hover span {
+  background: var(--primary_color);
+}
+
+.pageSection {
+  overflow: hidden;
+}
+
+/* 01 - Menu */
+.menu {
+  flex-direction: column;
+  border: 1px solid #575757;
+  border-radius: 30px;
+  position: fixed;
+  right: 68px;
+  top: 322px;
+  /* width: 55px; */
+  text-align: center;
+  gap: 20px;
+  padding: 24px 0;
+  background: #1f1f1f;
+  z-index: 20;
+}
+.menu li .scrollTo,
+.menu li a {
+  display: block;
+  position: relative;
+  /* padding: 10px 10px; */
+  width: 55px;
+  transition: 0.3s;
+  color: #999999;
+  cursor: pointer;
+}
+.menu li a.active,
+.menu li a:hover,
+.menu li .scrollTo.active,
+.menu li .scrollTo:hover {
+  color: var(--primary_color);
+}
+.menu li .scrollTo:hover span,
+.menu li a:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+.menu li .scrollTo i,
+.menu li a i {
+  font-size: 20px;
+  display: block;
+}
+.menu li .scrollTo span,
+.menu li a span {
+  position: absolute;
+  transition: 0.3s;
+  font-size: 12px;
+  background: #404042;
+  right: 100%;
+  color: #fff;
+  display: block;
+  padding: 3px 8px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+}
+.menu li .scrollTo span::before,
+.menu li a span::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #404042;
+  position: absolute;
+  right: -3px;
+  top: 50%;
+  transform: rotate(54deg) skew(-8deg, -39deg);
+  margin-top: -5px;
+  z-index: -1;
+}
+
+/* Responsive Sidebar Menu */
+.responsiveSidebarMenu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+.responsiveSidebarMenu.active {
+  opacity: 1;
+  visibility: visible;
+}
+.customGlobalColor .inner .overlay,
+.responsiveSidebarMenu .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #565656;
+  opacity: 0.5;
+}
+.responsiveSidebarMenu .sidebarMenuInner {
+  max-width: 345px;
+  width: 100%;
+  margin-left: auto;
+  background: #191919;
+  height: 100%;
+  overflow-x: hidden;
+  padding-top: 50px;
+  margin-right: -250px;
+  transition: 0.3s;
+}
+.responsiveSidebarMenu.active .sidebarMenuInner {
+  margin-right: 0;
+}
+.responsiveSidebarMenu .sidebarMenuInner .menuWrap {
+  width: 46%;
+  margin: auto;
+}
+.responsiveSidebarMenu .sidebarMenuInner .menuWrap p {
+  font-size: 18px;
+}
+.responsiveSidebarMenu .sidebarMenuInner .menuWrap .menu {
+  position: relative;
+  right: auto;
+  left: 0;
+  top: 0;
+  transform: translateY(0);
+  background: none;
+  border-radius: 0;
+  border: none;
+  margin-bottom: 30px;
+}
+.responsiveSidebarMenu .sidebarMenuInner .menuWrap .menu li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.responsiveSidebarMenu .sidebarMenuInner .menuWrap .menu li a:hover span {
+  color: #fff;
+}
+.responsiveSidebarMenu .sidebarMenuInner .menuWrap .menu li a i {
+  margin-bottom: 2px;
+}
+.responsiveSidebarMenu .sidebarMenuInner .menuWrap .menu li a span {
+  position: relative;
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+  color: #999999;
+  background: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+.responsiveSidebarMenu .sidebarMenuInner .menuWrap .menu li a span::before {
+  display: none;
+}
+.responsiveSidebarMenu .sidebarMenuInner .menuWrap .menu li a.active span {
+  color: #fff;
+}
+.responsiveSidebarMenu .sidebarMenuInner .customGlobalColorOption,
+.responsiveSidebarMenu .sidebarMenuInner .sidebarSocial {
+  width: 46%;
+  margin: auto;
+}
+.responsiveSidebarMenu .sidebarMenuInner .sidebarSocial ul {
+  gap: 15px;
+}
+.responsiveSidebarMenu .sidebarMenuInner .sidebarSocial ul li a {
+  color: #999999;
+  transition: 0.3s;
+  font-size: 16px;
+}
+.responsiveSidebarMenu .sidebarMenuInner .sidebarSocial ul li a:hover {
+  color: var(--primary_color);
+}

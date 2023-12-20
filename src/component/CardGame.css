@@ -1,0 +1,84 @@
+body {
+  background-color: #111; /* Near black background */
+  color: #fff; /* White text for contrast */
+}
+
+.cardGameContainer {
+  /* position: absolute; */
+  width: 220px;
+  height: 180px;
+  transition: top 2s, left 2s;
+  perspective: 1000px;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);  */
+  transition: 0.3s;
+  /* background: linear-gradient(to right, #ff9966, #ff5e62); */
+}
+
+/* .cardGameContainer {
+  
+} */
+
+.cardGame {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.cardBlur {
+  backdrop-filter: blur(5px);
+}
+
+.frontCard,
+.backCard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+}
+
+.frontCard {
+  background-color: #bbb;
+  color: black;
+}
+
+.frontCard > h4 {
+  overflow-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.backCard {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.backCard > img {
+  height: 60%;
+  width: 100%;
+}
+.backCard > h5 {
+  overflow-wrap: break-word;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  height: 20%;
+  width: 100%;
+  align-items: center;
+}
+
+.flipped .cardGame {
+  transform: rotateY(180deg);
+  box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+}
