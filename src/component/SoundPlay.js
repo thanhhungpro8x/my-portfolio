@@ -6,22 +6,26 @@ const SoundPlay = memo(({ soundFileName, isPlay }) => {
   const soundList = require.context("../asset/sound/");
   const filePlay = soundList(`./${soundFileName}`);
 
-  const [play, { stop }] = useSound(filePlay, {
+  let [play, { stop }] = useSound(filePlay, {
     onend: () => {
-      console.info("Sound ended!");
+      // console.info("Sound ended!");
     },
   });
 
   useEffect(() => {
-    stop();
-    console.log("Playing...");
+    // console.log("Playing...");
   }, [soundFileName]);
 
   useEffect(() => {
-    console.log("Playing");
+    // console.log("Playing");
   }, [isPlay]);
 
-  return <Aux>{isPlay ? play() : stop()}</Aux>;
+  return (
+    <Aux>
+      <button style={{ display: "none" }} id="unmuteButton"></button>
+      {isPlay ? play() : stop()}
+    </Aux>
+  );
 });
 
 export default SoundPlay;

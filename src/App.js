@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     document.title = "Thanh Hung DOAN - Site";
-    console.log(i18n.t("intro_name"));
+    // console.log(i18n.t("intro_name"));
   }, []);
   return (
     <Suspense fallback="...loading">
