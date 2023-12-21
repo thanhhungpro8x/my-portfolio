@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const RootLayout = () => {
-  const [isWinner, setIsWinner] = useState(false);
+  const [isWinner, setIsWinner] = useState(true);
 
   useEffect(() => {
     AOS.init({ duration: 1000 });

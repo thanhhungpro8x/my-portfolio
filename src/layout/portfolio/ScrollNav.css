@@ -1,0 +1,68 @@
+/* Menu */
+.menu {
+  flex-direction: column;
+  border: 1px solid #c8c4c4;
+  border-radius: 30px;
+  position: fixed;
+  right: 50px;
+  top: 440px;
+  /* width: 55px; */
+  text-align: center;
+  gap: 20px;
+  padding: 24px 0;
+  background: #1f1f1f;
+  z-index: 20;
+}
+.menu li .scrollTo,
+.menu li a {
+  display: block;
+  position: relative;
+  /* padding: 10px 10px; */
+  width: 55px;
+  transition: 0.3s;
+  color: #999999;
+  cursor: pointer;
+}
+.menu li a.active,
+.menu li a:hover,
+.menu li .scrollTo.active,
+.menu li .scrollTo:hover {
+  color: var(--primary_color);
+}
+.menu li .scrollTo:hover span,
+.menu li a:hover span {
+  opacity: 1;
+  visibility: visible;
+}
+.menu li .scrollTo i,
+.menu li a i {
+  font-size: 20px;
+  display: block;
+}
+.menu li .scrollTo span,
+.menu li a span {
+  position: absolute;
+  transition: 0.3s;
+  font-size: 12px;
+  background: #404042;
+  right: 100%;
+  color: #fff;
+  display: block;
+  padding: 3px 8px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+}
+.menu li .scrollTo span::before,
+.menu li a span::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #404042;
+  position: absolute;
+  right: -3px;
+  top: 50%;
+  transform: rotate(54deg) skew(-8deg, -39deg);
+  margin-top: -5px;
+  z-index: -1;
+}

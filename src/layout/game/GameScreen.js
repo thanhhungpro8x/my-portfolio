@@ -6,8 +6,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Popup from "../../component/Popup";
 import success from "../../asset/data/game-success.json";
+import successFr from "../../asset//data/fr/game-success.json";
+import { useTranslation } from "react-i18next";
 
 const GameScreen = ({ cardItems, setCardItems, setIsWinner }) => {
+  const { t, i18n } = useTranslation();
   const [matchedItems, setMatchedItems] = useState([]);
   const [cardNotMatches, setCardNotMatches] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
@@ -18,7 +21,13 @@ const GameScreen = ({ cardItems, setCardItems, setIsWinner }) => {
     isCorrectPlay: false,
     isWinningPlay: false,
   });
-  const [modalState, setModalState] = useState(success);
+
+  const languages = {
+    en: success,
+    fr: successFr,
+  };
+
+  const [modalState, setModalState] = useState(languages[i18n.language]);
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -115,9 +124,9 @@ const GameScreen = ({ cardItems, setCardItems, setIsWinner }) => {
       <div className="section" data-aos="zoom-in" id="gameArea">
         {countdown === -1 ? (
           <div className="sectionOvelay">
-            <h3>Are you ready to explore my profile?</h3>
+            <h3>{t("intro:gameQuestion")}</h3>
             <button className="playButton" onClick={handlePlay}>
-              Play
+              {t("intro:playGameButton")}
             </button>
           </div>
         ) : (
@@ -129,7 +138,7 @@ const GameScreen = ({ cardItems, setCardItems, setIsWinner }) => {
         >
           <h3 className="justify-content-center">
             {countdown && countdown > 0 ? (
-              <Aux>You have {countdown} seconds to memory the card!</Aux>
+              <Aux>{t("intro:gameInstruction", { countdown })}</Aux>
             ) : (
               ""
             )}

@@ -4,15 +4,17 @@ import "./AboutMe.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import DynamicIcon from "../../component/DynamicIcon";
-import data from "../../asset/data/about-me.json";
+// import data from "../../asset/data/about-me.json";
+import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
     <Aux>
-      <section className="aboutMeArea pageSection scrollToPage" id="about">
+      <section className="aboutMeArea scrollToPage" id="about">
         <div className="customContainer">
           <div className="aboutMeContent contentWidth">
             <div className="sectionHeader">
@@ -22,16 +24,16 @@ const AboutMe = () => {
                   fontSizeValue={"medium"}
                   marginValue="5px"
                 />{" "}
-                {data.aboutMeHeaderName}
+                {t("about-me:aboutMeHeaderName")}
               </h4>
               <h1 className="scrollAnimation" data-aos="fade-up">
-                {data.aboutMeTitle}
+                {t("about-me:aboutMeTitle")}
                 <br />
-                <span>{data.aboutMeSubTitle}</span>
+                <span>{t("about-me:aboutMeSubTitle")}</span>
               </h1>
             </div>
             <p className="scrollAnimation" data-aos="fade-up">
-              {data.aboutMeDescription}
+              {t("about-me:aboutMeDescription")}
             </p>
           </div>
         </div>

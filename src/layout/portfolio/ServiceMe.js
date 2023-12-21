@@ -4,9 +4,18 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import DynamicIcon from "../../component/DynamicIcon";
-import services from "../../asset/data/work-service.json";
+import servicesFr from "../../asset/data/fr/work-service.json";
+import servicesEn from "../../asset/data/work-service.json";
+import { useTranslation } from "react-i18next";
 
 const ServiceMe = () => {
+  const { t, i18n } = useTranslation("work-service");
+  const languages = {
+    en: servicesEn,
+    fr: servicesFr,
+  };
+  const localeData = languages[i18n.language];
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -26,18 +35,19 @@ const ServiceMe = () => {
                   fontSizeValue={"medium"}
                   marginValue="5px"
                 />{" "}
-                {services.workServiceHeaderName}
+                {t("work-service:workServiceHeaderName")}
               </h4>
               <h1 className="scrollAnimation" data-aos="fade-up">
-                {services.workServiceTitle1}{" "}
-                <span>{services.workServiceTitle2}</span>
+                {t("work-service:workServiceTitle1")}{" "}
+                <span>{t("work-service:workServiceTitle2")}</span>
               </h1>
             </div>
 
             <div className="myServicesItems">
-              {services.datas?.map((item, index) => {
+              {localeData.datas?.map((item, index) => {
                 return (
                   <div
+                    key={item.serviceProject + index}
                     className="myServiceItem scrollAnimation"
                     data-aos="fade-up"
                   >

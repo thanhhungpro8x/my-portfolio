@@ -4,9 +4,18 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Aux from "../../component/Aux";
 import DynamicIcon from "../../component/DynamicIcon";
-import works from "../../asset/data/work-exp.json";
+import worksFr from "../../asset/data/fr/work-exp.json";
+import worksEn from "../../asset/data/work-exp.json";
+import { useTranslation } from "react-i18next";
 
 const MyCV = () => {
+  const { t, i18n } = useTranslation();
+  const languages = {
+    en: worksEn,
+    fr: worksFr,
+  };
+  const localeData = languages[i18n.language];
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -22,17 +31,18 @@ const MyCV = () => {
                   fontSizeValue={"medium"}
                   marginValue="5px"
                 />{" "}
-                {works.expHeaderName}
+                {t("work-exp:expHeaderName")}
               </h4>
               <h1 className="scrollAnimation" data-aos="fade-up">
-                {works.expTitle1} <span>{works.expTitle2}</span>
+                {t("work-exp:expTitle1")} <span>{t("work-exp:expTitle2")}</span>
               </h1>
             </div>
 
             <div className="resumeTimeline">
-              {works.datas?.map((item, index) => {
+              {localeData.datas?.map((item, index) => {
                 return (
                   <div
+                    key={item.projects}
                     className="item scrollAnimation"
                     data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
                   >

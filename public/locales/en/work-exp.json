@@ -1,0 +1,42 @@
+{
+  "expHeaderName": "My Resume",
+  "expTitle1": "Education & ",
+  "expTitle2": "Experience",
+  "datas": [
+    {
+      "jobTitle": "Full Stack Java/Angular Developer at SCOR",
+      "projects": "Projets : Forewriter, Data Capture Management et MGA",
+      "period": "2018 - Present"
+    },
+    {
+      "jobTitle": "Java Tech Lead at Pentalog",
+      "projects": "Projets : Application Watcher, BackOffice Orange, BackOffice Batches, Domain Métier, Opale-Topaze-Saphir, Parental Control",
+      "period": "2014 - 2018"
+    },
+    {
+      "jobTitle": "Senior Full Stack Java Developer at Pyramid",
+      "projects": "Projets : BelgaBox, BelgaSource et Picture360",
+      "period": "2013 - 2014"
+    },
+    {
+      "jobTitle": "Full Stack Java Developer at HarveyNash",
+      "projects": "Projets : Dispatch System, SpServices",
+      "period": "2011 - 2013"
+    },
+    {
+      "jobTitle": "Junior Full Stack Java Developer at MyPay",
+      "projects": "Projets : Carte Management, E-Wallet, Cash-In/Cash-Out and BackOffice",
+      "period": "2009 - 2011"
+    },
+    {
+      "jobTitle": "Bachelor's Degree in Computer Science",
+      "projects": "The University of Greenwich",
+      "period": "2010 - 2011"
+    },
+    {
+      "jobTitle": "Diploma in Information Technology Engineering",
+      "projects": "The Institute of Posts and Telecommunications Technology",
+      "period": "2004 - 2009"
+    }
+  ]
+}

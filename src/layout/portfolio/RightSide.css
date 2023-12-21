@@ -1,7 +1,7 @@
 /* Icon Menu */
 .iconMenuRight {
   position: absolute;
-  right: 68px;
+  right: 50px;
   top: 60px;
   width: 55px;
   height: 55px;
@@ -35,13 +35,12 @@
   overflow: hidden;
 }
 
-/* 01 - Menu */
 .menu {
   flex-direction: column;
   border: 1px solid #575757;
   border-radius: 30px;
   position: fixed;
-  right: 68px;
+  right: 50px;
   top: 322px;
   /* width: 55px; */
   text-align: center;
@@ -55,7 +54,7 @@
   display: block;
   position: relative;
   /* padding: 10px 10px; */
-  width: 55px;
+  width: 100px;
   transition: 0.3s;
   color: #999999;
   cursor: pointer;

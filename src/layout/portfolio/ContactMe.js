@@ -4,9 +4,11 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Aux from "../../component/Aux";
 import DynamicIcon from "../../component/DynamicIcon";
-import data from "../../asset/data/contact.json";
+// import data from "../../asset/data/contact.json";
+import { useTranslation } from "react-i18next";
 
 const ContactMe = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -26,16 +28,17 @@ const ContactMe = () => {
                   fontSizeValue={"medium"}
                   marginValue="5px"
                 />{" "}
-                {data.contactHeaderName}
+                {t("contact:contactHeaderName")}
               </h4>
               <h1 className="scrollAnimation" data-aos="fade-up">
-                {data.contactTitle1} <span>{data.contactTitle2}</span>
+                {t("contact:contactTitle1")}
+                <span>{t("contact:contactTitle2")}</span>
               </h1>
             </div>
             <h3 className="scrollAnimation" data-aos="fade-up">
               {/* thanhhungpro8x@icloud.com */}
             </h3>
-            <p id="requiredMsg">* Marked fields are required to fill.</p>
+            <p id="requiredMsg">{t("contact:contactRequired")}</p>
 
             <form
               className="contactForm scrollAnimation"
@@ -43,57 +46,61 @@ const ContactMe = () => {
               method="POST"
               action="mailer.js"
             >
-              <div
+              {/* <div
                 className="alert alert-success messenger-box-contact__msg"
                 style={{ display: "none" }}
                 role="alert"
               >
                 Your message was sent successfully.
-              </div>
+              </div> */}
               <div className="row">
                 <div className="col-md-6">
                   <div className="inputFieldGroup">
                     <label htmlFor="full-name">
-                      {data.contactFullname} <sup>*</sup>
+                      {t("contact:contactFullname")}
+                      <sup>*</sup>
                     </label>
                     <input
                       type="text"
                       name="full-name"
                       id="full-name"
-                      placeholder="Your Full Name"
+                      placeholder={t("contact:contactFullnamePlace")}
                     />
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="inputFieldGroup">
                     <label htmlFor="email">
-                      {data.contactMail} <sup>*</sup>
+                      {t("contact:contactMail")}
+                      <sup>*</sup>
                     </label>
                     <input
                       type="email"
                       name="email"
                       id="email"
-                      placeholder="Your email adress"
+                      placeholder={t("contact:contactEmailPlace")}
                     />
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="inputFieldGroup">
                     <label htmlFor="phone-number">
-                      {data.contactPhone} <span>(optional)</span>
+                      {t("contact:contactPhone")}
+                      <span>(optional)</span>
                     </label>
                     <input
                       type="text"
                       name="phone-number"
                       id="phone-number"
-                      placeholder="Your number phone"
+                      placeholder={t("contact:contactPhonePlace")}
                     />
                   </div>
                 </div>
                 <div className="col-md-6">
                   <div className="inputFieldGroup">
                     <label htmlFor="subject">
-                      {data.contactSubject} <sup>*</sup>
+                      {t("contact:contactSubject")}
+                      <sup>*</sup>
                     </label>
                     <select name="subject" id="subject">
                       {/* <option value="">Select a subject</option> */}
@@ -107,11 +114,13 @@ const ContactMe = () => {
 
                 <div className="col-md-12">
                   <div className="inputFieldGroup">
-                    <label htmlFor="message">{data.contactMessage}</label>
+                    <label htmlFor="message">
+                      {t("contact:contactMessage")}
+                    </label>
                     <textarea
                       name="message"
                       id="message"
-                      placeholder="Wrire your message here ..."
+                      placeholder={t("contact:contactMessagePlace")}
                     ></textarea>
                   </div>
                 </div>
@@ -124,7 +133,7 @@ const ContactMe = () => {
                           fontSizeValue={"medium"}
                           marginValue="5px"
                         />
-                        {data.contactAttachment}
+                        {t("contact:contactAttachment")}
                         <input
                           type="file"
                           name="file"
@@ -142,7 +151,7 @@ const ContactMe = () => {
                       type="submit"
                       id="submit-form"
                     >
-                      {data.contactSend}
+                      {t("contact:contactSend")}
                     </button>
                   </div>
                 </div>

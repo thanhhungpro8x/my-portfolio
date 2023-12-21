@@ -1,15 +1,24 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Aux from "./component/Aux";
-import MyChallenge from "./layout/game/MyChallenge";
 import RootLayout from "./layout/RootLayout";
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { Suspense } from "react";
 
 function App() {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    document.title = "Thanh Hung DOAN - Site";
+    console.log(i18n.t("intro_name"));
+  }, []);
   return (
-    // <div className="appContainer">
-    //   <MyChallenge></MyChallenge>
-    // </div>
-    <RootLayout />
+    <Suspense fallback="...loading">
+      <Aux>
+        <RootLayout />
+      </Aux>
+    </Suspense>
   );
 }
 

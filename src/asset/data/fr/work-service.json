@@ -1,0 +1,25 @@
+{
+  "workServiceHeaderName": "Mes Services",
+  "workServiceTitle1": "Mes ",
+  "workServiceTitle2": "Spécialisations",
+  "datas": [
+    {
+      "serviceTitle": "Architecture Système",
+      "serviceDescription": "En tant que développeur Java avec une vaste expérience dans les architectures monolithiques et microservices, je me spécialise dans la création d'architectures système robustes qui s'intègrent parfaitement à ma maîtrise de Java, garantissant des solutions évolutives et efficaces pour divers projets logiciels.",
+      "serviceProject": "5+ Projets",
+      "serviceIconName": "DesignServices"
+    },
+    {
+      "serviceTitle": "Développement",
+      "serviceDescription": "En tant que développeur dévoué, je me spécialise dans la création de solutions robustes en intégrant parfaitement le backend avec Java, utilisant des frameworks tels que Spring Web MVC, et orchestrant des expériences frontales dynamiques avec des technologies telles que React et Angular. Mon approche du développement englobe une attention particulière à la qualité du code, à la scalabilité et à la conception centrée sur l'utilisateur, garantissant que chaque projet que j'entreprends respecte des normes élevées et offre une valeur exceptionnelle.",
+      "serviceProject": "10+ Projets",
+      "serviceIconName": "Code"
+    },
+    {
+      "serviceTitle": "OPS",
+      "serviceDescription": "En tant que développeur backend passionné de microservices, j'adopte une approche holistique du développement logiciel, intégrant harmonieusement les aspects développement et opérations. Compétent dans l'orchestration des pipelines CI/CD, l'automatisation des déploiements et la mise en œuvre de l'infrastructure en tant que code, mon objectif est d'améliorer la collaboration entre les équipes de développement et d'opérations, favorisant une culture d'intégration, de livraison et d'amélioration continues.",
+      "serviceProject": "5+ Projets",
+      "serviceIconName": "DeveloperMode"
+    }
+  ]
+}

@@ -10,8 +10,12 @@ import ContactMe from "./ContactMe";
 import "./PortfolioResponsive.css";
 import RightSideHome from "./RightSide";
 import ScrollNav from "./ScrollNav";
+import { useEffect } from "react";
 
 const MainPortfolioContent = () => {
+  useEffect(() => {
+    document.title = "😉 DOAN - Portfolio";
+  }, []);
   return (
     <main className="doanPortfolioMain">
       <div id="smoothWrapper">

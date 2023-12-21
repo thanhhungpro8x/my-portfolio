@@ -1,0 +1,42 @@
+{
+  "expHeaderName": "Mon CV",
+  "expTitle1": "Éducation & ",
+  "expTitle2": "Expérience",
+  "datas": [
+    {
+      "jobTitle": "Développeur Full Stack Java/Angular chez SCOR",
+      "projects": "Projets : Forewriter, Data Capture Management et MGA",
+      "period": "2018 - Présent"
+    },
+    {
+      "jobTitle": "Java Tech Lead chez Pentalog",
+      "projects": "Projets : Application Watcher, BackOffice Orange, BackOffice Batches, Domain Métier, Opale-Topaze-Saphir, Contrôle Parental",
+      "period": "2014 - 2018"
+    },
+    {
+      "jobTitle": "Développeur Full Stack Java Senior chez Pyramid",
+      "projects": "Projets : BelgaBox, BelgaSource et Picture360",
+      "period": "2013 - 2014"
+    },
+    {
+      "jobTitle": "Développeur Full Stack Java chez HarveyNash",
+      "projects": "Projets : Dispatch System, SpServices",
+      "period": "2011 - 2013"
+    },
+    {
+      "jobTitle": "Développeur Full Stack Java Junior chez MyPay",
+      "projects": "Projets : Carte Management, E-Wallet, Cash-In/Cash-Out et BackOffice",
+      "period": "2009 - 2011"
+    },
+    {
+      "jobTitle": "Licence en informatique",
+      "projects": "Université de Greenwich",
+      "period": "2010 - 2011"
+    },
+    {
+      "jobTitle": "Diplôme en ingénierie des technologies de l'information",
+      "projects": "Institut de technologie des postes et des télécommunications",
+      "period": "2004 - 2009"
+    }
+  ]
+}

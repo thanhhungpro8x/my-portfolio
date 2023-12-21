@@ -1,0 +1,17 @@
+{
+  "contactHeaderName": "My Contact",
+  "contactTitle1": "Let's Work",
+  "contactTitle2": " Together!",
+  "contactFullname": "full Name",
+  "contactMail": "Email",
+  "contactPhone": "Phone",
+  "contactSubject": "Subject",
+  "contactMessage": "Message",
+  "contactAttachment": "Add an attachment",
+  "contactSend": "Send Message",
+  "contactRequired": "* Marked fields are required to fill.",
+  "contactFullnamePlace": "Your Full Name",
+  "contactEmailPlace": "Your email adress",
+  "contactPhonePlace": "Your number phone",
+  "contactMessagePlace": "Wrire your message here ..."
+}

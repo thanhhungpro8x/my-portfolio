@@ -4,9 +4,11 @@ import DynamicIcon from "../../component/DynamicIcon";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import data from "../../asset/data/rightside.json";
+// import data from "../../asset/data/rightside.json";
+import { useTranslation } from "react-i18next";
 
 const RightSideHome = () => {
+  const { t } = useTranslation();
   const addActive = () => {
     document.querySelector(".responsiveSidebarMenu").classList.add("active");
   };
@@ -24,7 +26,7 @@ const RightSideHome = () => {
           <div className="overlay" onClick={removeActive}></div>
           <div className="sidebarMenuInner">
             <div className="menuWrap">
-              <p>{data.menu}</p>
+              <p>{t("rightside:menu")}</p>
               <ul className="menu d-flex">
                 <li>
                   <a className="scrollTo" href="#home" onClick={removeActive}>
@@ -33,7 +35,7 @@ const RightSideHome = () => {
                       fontSizeValue={"medium"}
                       marginValue={"5px"}
                     />{" "}
-                    <span>{data.introductionMenu}</span>
+                    <span> {t("rightside:introductionMenu")}</span>
                   </a>
                 </li>
                 <li>
@@ -43,7 +45,7 @@ const RightSideHome = () => {
                       fontSizeValue={"medium"}
                       marginValue="5px"
                     />{" "}
-                    <span>{data.aboutMenu}</span>
+                    <span>{t("rightside:aboutMenu")}</span>
                   </a>
                 </li>
                 <li>
@@ -53,7 +55,7 @@ const RightSideHome = () => {
                       fontSizeValue={"medium"}
                       marginValue="5px"
                     />{" "}
-                    <span>{data.resumeMenu}</span>
+                    <span>{t("rightside:resumeMenu")}</span>
                   </a>
                 </li>
                 <li>
@@ -67,7 +69,7 @@ const RightSideHome = () => {
                       fontSizeValue={"medium"}
                       marginValue="5px"
                     />{" "}
-                    <span>{data.servicesMenu}</span>
+                    <span>{t("rightside:servicesMenu")}</span>
                   </a>
                 </li>
                 <li>
@@ -77,7 +79,7 @@ const RightSideHome = () => {
                       fontSizeValue={"medium"}
                       marginValue="5px"
                     />{" "}
-                    <span>{data.skillsMenu}</span>
+                    <span>{t("rightside:skillsMenu")}</span>
                   </a>
                 </li>
                 <li>
@@ -91,7 +93,7 @@ const RightSideHome = () => {
                       fontSizeValue={"medium"}
                       marginValue={"5px"}
                     />
-                    <span>{data.projectsMenu}</span>
+                    <span>{t("rightside:projectsMenu")}</span>
                   </a>
                 </li>
                 <li>
@@ -105,7 +107,7 @@ const RightSideHome = () => {
                       fontSizeValue={"medium"}
                       marginValue="5px"
                     />{" "}
-                    <span>{data.verifiedMenu}</span>
+                    <span>{t("rightside:verifiedMenu")}</span>
                   </a>
                 </li>
                 <li>
@@ -119,17 +121,17 @@ const RightSideHome = () => {
                       fontSizeValue={"medium"}
                       marginValue="5px"
                     />{" "}
-                    <span>{data.contactMenu}</span>
+                    <span>{t("rightside:contactMenu")}</span>
                   </a>
                 </li>
               </ul>
             </div>
 
             <div className="sidebarSocial">
-              <p>{data.social}</p>
+              <p>{t("rightside:social")}</p>
               <ul className="social-links d-flex align-items-center">
                 <li>
-                  <a href={data.twitter}>
+                  <a href={t("rightside:twitter")}>
                     <TwitterIcon />
                   </a>
                 </li>
@@ -139,12 +141,12 @@ const RightSideHome = () => {
                   </a>
                 </li> */}
                 <li>
-                  <a href={data.github}>
+                  <a href={t("rightside:github")}>
                     <GitHubIcon />
                   </a>
                 </li>
                 <li>
-                  <a href={data.linkedIn}>
+                  <a href={t("rightside:linkedIn")}>
                     <LinkedInIcon />
                   </a>
                 </li>

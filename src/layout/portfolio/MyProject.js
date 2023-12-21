@@ -6,10 +6,19 @@ import "lightbox2/dist/css/lightbox.min.css";
 import Aux from "../../component/Aux";
 import DynamicIcon from "../../component/DynamicIcon";
 import { useEffect } from "react";
-import projects from "../../asset/data/project.json";
+import projectsFr from "../../asset/data/fr/project.json";
+import projectsEn from "../../asset/data/project.json";
+import { useTranslation } from "react-i18next";
 
 const MyProject = () => {
+  const { t, i18n } = useTranslation();
   const images = require.context("../../asset/project/");
+  const languages = {
+    en: projectsEn,
+    fr: projectsFr,
+  };
+
+  const localeData = languages[i18n.language];
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -40,29 +49,33 @@ const MyProject = () => {
                   fontSizeValue={"medium"}
                   marginValue={"5px"}
                 />{" "}
-                {projects.projectHeaderName}
+                {t("project:projectHeaderName")}
               </h4>
               <h1 className="scrollAnimation">
-                {projects.projectTitle1} <span>{projects.projectTitle2}</span>
+                {t("project:projectTitle1")}{" "}
+                <span>{t("project:projectTitle2")}</span>
               </h1>
             </div>
 
             <div className="row portfolioItems">
-              {projects.datas?.map((item, index) => {
+              {localeData.datas?.map((item, index) => {
                 return (
                   <div
+                    key={item.projectName + index}
                     className="col-md-12 scrollAnimation"
                     data-aos={item.aos}
                   >
                     <div className="portfolioItem portfolioFull">
                       <div className="portfolioItemInner">
-                        {item.images?.map((image) => {
+                        {item.images?.map((image, index) => {
                           return (
                             <a
+                              key={image.name + index}
                               href={getImage(image.name)}
                               data-lightbox={item.albumName}
                             >
                               <img
+                                key={image.albumName + index}
                                 src={getImage(image.name)}
                                 alt={item.albumName}
                               />
@@ -71,9 +84,9 @@ const MyProject = () => {
                         })}
 
                         <ul className="portfolioCategories">
-                          {item.techStack?.map((tech) => {
+                          {item.techStack?.map((tech, index) => {
                             return (
-                              <li>
+                              <li key={tech.name + index}>
                                 <a href={tech.link}>{tech.name}</a>
                               </li>
                             );

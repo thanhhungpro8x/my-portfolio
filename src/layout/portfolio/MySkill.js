@@ -6,8 +6,10 @@ import Aux from "../../component/Aux";
 import DynamicIcon from "../../component/DynamicIcon";
 import IconStatic from "../../component/IconStatic";
 import skills from "../../asset/data/skills.json";
+import { useTranslation } from "react-i18next";
 
 const MySkill = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -24,10 +26,11 @@ const MySkill = () => {
                   fontSizeValue={"medium"}
                   marginValue="5px"
                 />{" "}
-                {skills.skillsHeaderName}
+                {t("skills:skillsHeaderName")}
               </h4>
               <h1 className="scrollAnimation" data-aos="fade-up">
-                {skills.skillsTitle1} <span>{skills.skillsTitle2}</span>
+                {t("skills:skillsTitle1")}{" "}
+                <span>{t("skills:skillsTitle2")}</span>
               </h1>
             </div>
 

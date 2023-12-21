@@ -1,0 +1,17 @@
+{
+  "contactHeaderName": "Mes coordonnées",
+  "contactTitle1": "Travaillons ",
+  "contactTitle2": " ensemble!",
+  "contactFullname": "Nom complet",
+  "contactMail": "Email",
+  "contactPhone": "Téléphone",
+  "contactSubject": "Sujet",
+  "contactMessage": "Message",
+  "contactAttachment": "Ajouter une pièce jointe",
+  "contactSend": "Envoyer le message",
+  "contactRequired": "* Les champs marqués d'une astérisque sont obligatoires.",
+  "contactFullnamePlace": "Votre nom complet",
+  "contactEmailPlace": "Votre adresse e-mail",
+  "contactPhonePlace": "Votre numéro de téléphone",
+  "contactMessagePlace": "Écrivez votre message ici..."
+}

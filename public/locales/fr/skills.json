@@ -1,0 +1,67 @@
+{
+  "skillsHeaderName": "mes compétences",
+  "skillsTitle1": "Mes ",
+  "skillsTitle2": "Atouts",
+  "datas": [
+    {
+      "skillName": "Java",
+      "skillIconName": "java-icon.png",
+      "skillLevel": "95%",
+      "aos": "fade-right"
+    },
+    {
+      "skillName": "Spring Framework & Spring Boot",
+      "skillIconName": "springframework2-icon.png",
+      "skillLevel": "90%",
+      "aos": "fade-up"
+    },
+    {
+      "skillName": "Hibernate, JPA & Liquibase",
+      "skillIconName": "hibernate-icon.png",
+      "skillLevel": "90%",
+      "aos": "fade-down"
+    },
+    {
+      "skillName": "Bases de données Oracle/Mysql/MSSQL/NOSQL",
+      "skillIconName": "database-icon.png",
+      "skillLevel": "90%",
+      "aos": "fade-left"
+    },
+    {
+      "skillName": "Javascript, React, Angular & ExpressJS",
+      "skillIconName": "react-icon.png",
+      "skillLevel": "60%",
+      "aos": "fade-right"
+    },
+    {
+      "skillName": "Docker, Docker Compose & Kubernetes",
+      "skillIconName": "docker-icon.png",
+      "skillLevel": "70%",
+      "aos": "fade-up"
+    },
+    {
+      "skillName": "Conception de systèmes & Microservices",
+      "skillIconName": "systemdesign-icon.png",
+      "skillLevel": "90%",
+      "aos": "fade-down"
+    },
+    {
+      "skillName": "Intégration continue & Livraison continue",
+      "skillIconName": "jenkins-icon.png",
+      "skillLevel": "80%",
+      "aos": "fade-left"
+    },
+    {
+      "skillName": "Agile & Modélisation Scrum",
+      "skillIconName": "scrums-icon.png",
+      "skillLevel": "90%",
+      "aos": "fade-right"
+    },
+    {
+      "skillName": "Travail d'équipe & Communication",
+      "skillIconName": "teamwork-icon.png",
+      "skillLevel": "90%",
+      "aos": "fade-up"
+    }
+  ]
+}

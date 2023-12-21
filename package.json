@@ -15,6 +15,10 @@
     "bootstrap": "^5.3.2",
     "emoji-picker-react": "^4.5.16",
     "i18next": "^23.7.11",
+    "i18next-browser-languagedetector": "^7.2.0",
+    "i18next-fs-backend": "^2.3.1",
+    "i18next-http-backend": "^2.4.2",
+    "i18next-scanner": "^4.4.0",
     "jquery": "^3.7.1",
     "json-loader": "^0.5.7",
     "lightbox2": "^2.11.4",
@@ -31,7 +35,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "i18n:extract": "i18next-scanner --config ./src/i18n/i18n.config.js",
+    "scan-i18n": "i18next-scanner"
   },
   "eslintConfig": {
     "extends": [

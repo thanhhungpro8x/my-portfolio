@@ -4,15 +4,17 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Aux from "../../component/Aux";
 import DynamicIcon from "../../component/DynamicIcon";
-import data from "../../asset/data/introduction.json";
+// import data from "../../asset/data/introduction.json";
+import { useTranslation } from "react-i18next";
 
 const IntroduceMe = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
     <Aux>
-      <section className="introduceSection scrollToPage" id="home">
+      <section className="introduceSection pageSection scrollToPage" id="home">
         <div className="customContainer">
           <div className="introduceContent contentWidth">
             <div className="sectionHeader">
@@ -26,25 +28,26 @@ const IntroduceMe = () => {
                   fontSizeValue={"medium"}
                   marginValue="5px"
                 />
-                {data.introHeaderName}
+                {t("introduction:introHeaderName")}
               </h4>
-              <h1 className="scrollAnimation" data-aos="fade-up">
-                {data.introTitle1} <span>{data.introTitleName}</span>
-                {data.introTitle2}
-              </h1>
+              <h2 className="scrollAnimation" data-aos="fade-up">
+                {t("introduction:introTitle1")}{" "}
+                <span>{t("introduction:introTitleName")}</span>
+                {t("introduction:introTitle2")}
+              </h2>
             </div>
             <p className="scrollAnimation" data-aos="fade-up">
-              {data.introDescription}
+              {t("introduction:introDescription")}
             </p>
 
             <div className="facts d-flex">
               <div className="left scrollAnimation" data-aos="fade-right">
-                <h1>{data.introExpNum}</h1>
-                <p>{data.introExpMsg}</p>
+                <h1>{t("introduction:introExpNum")}</h1>
+                <p> {t("introduction:introExpMsg")}</p>
               </div>
               <div className="right scrollAnimation" data-aos="fade-left">
-                <h1>{data.introProjectNum}</h1>
-                <p>{data.introProjectMsg}</p>
+                <h1>{t("introduction:introProjectNum")}</h1>
+                <p>{t("introduction:introProjectMsg")}</p>
               </div>
             </div>
           </div>
