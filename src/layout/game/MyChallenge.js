@@ -7,6 +7,7 @@ import GameNav from "./GameNav";
 import data from "../../asset/data/game.json";
 import GameScreen from "./GameScreen";
 import GameIntro from "./GameIntro";
+import "./ChallengeResponsive.css";
 
 const MyChallenge = ({ setIsWinner }) => {
   const [cardItems, setCardItems] = useState(data);

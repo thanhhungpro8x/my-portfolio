@@ -1,0 +1,370 @@
+@media (min-width: 2001px) {
+  .section .gameArea {
+    width: 88%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .cardGameContainer {
+    width: 220px;
+    height: 180px;
+  }
+
+  #gameIntro > h1 {
+    font-size: 45px;
+  }
+  .moveIcon {
+    width: 150px;
+    height: 180px;
+  }
+
+  .backCard .iconStatic {
+    object-fit: cover;
+    width: 55px;
+    max-width: 100%;
+    height: 55px;
+    max-height: 60%;
+  }
+
+  .backCard > h5 {
+    font-size: 24px;
+    margin-top: 14px;
+    text-align: center;
+  }
+
+  .sectionOvelay > h3 {
+    font-size: 34px;
+  }
+
+  .playButton {
+    width: 230px;
+    height: 80px;
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 1556px) and (max-width: 2000px) {
+  .section .gameArea {
+    width: 88%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .cardGameContainer {
+    width: 200px;
+    height: 150px;
+  }
+
+  #gameIntro > h1 {
+    font-size: 40px;
+  }
+  .moveIcon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .backCard .iconStatic {
+    object-fit: cover;
+    width: 50px;
+    max-width: 100%;
+    height: 50px;
+    max-height: 60%;
+  }
+
+  .backCard > h5 {
+    font-size: 22px;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .sectionOvelay > h3 {
+    font-size: 32px;
+  }
+
+  .playButton {
+    width: 200px;
+    height: 80px;
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 1121px) and (max-width: 1555px) {
+  .cardGameContainer {
+    width: 155px;
+    height: 96px;
+  }
+  .section .gameArea {
+    width: 88%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  #gameIntro > h1 {
+    font-size: 32px;
+  }
+  .moveIcon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .backCard .iconStatic {
+    object-fit: cover;
+    width: 46px;
+    max-width: 100%;
+    height: 46px;
+    max-height: 60%;
+  }
+
+  .backCard > h5 {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .sectionOvelay > h3 {
+    font-size: 30px;
+  }
+
+  .playButton {
+    width: 170px;
+    height: 48px;
+    font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1120px) {
+  .cardGameContainer {
+    width: 145px;
+    height: 92px;
+  }
+  .section .gameArea {
+    width: 90%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  #gameIntro > h1 {
+    font-size: 30px;
+  }
+  .moveIcon {
+    width: 85px;
+    height: 85px;
+  }
+
+  .backCard .iconStatic {
+    object-fit: cover;
+    width: 44px;
+    max-width: 100%;
+    height: 44px;
+    max-height: 60%;
+  }
+
+  .backCard > h5 {
+    font-size: 14px;
+    margin-top: 9px;
+    text-align: center;
+  }
+
+  .sectionOvelay > h3 {
+    font-size: 28px;
+  }
+
+  .playButton {
+    width: 168px;
+    height: 46px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 900px) {
+  .cardGameContainer {
+    width: 138px;
+    height: 88px;
+  }
+  .section .gameArea {
+    width: 96%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  #gameIntro > h1 {
+    font-size: 28px;
+  }
+  .moveIcon {
+    width: 82px;
+    height: 82px;
+  }
+
+  .backCard .iconStatic {
+    object-fit: cover;
+    width: 40px;
+    max-width: 100%;
+    height: 40px;
+    max-height: 60%;
+  }
+
+  .backCard > h5 {
+    font-size: 13px;
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .sectionOvelay > h3 {
+    font-size: 26px;
+  }
+
+  .playButton {
+    width: 160px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 787px) {
+  .cardGameContainer {
+    width: 120px;
+    height: 85px;
+  }
+  .section .gameArea {
+    width: 99%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  #gameIntro > h1 {
+    font-size: 24px;
+  }
+  .moveIcon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .backCard .iconStatic {
+    object-fit: cover;
+    width: 30px;
+    max-width: 100%;
+    height: 30px;
+    max-height: 60%;
+  }
+
+  .backCard > h5 {
+    font-size: 12px;
+    margin-top: 6px;
+    text-align: center;
+  }
+
+  .sectionOvelay > h3 {
+    font-size: 20px;
+  }
+
+  .playButton {
+    width: 140px;
+    height: 40px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section .gameArea {
+    width: 99%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  #gameIntro > h1 {
+    font-size: 20px;
+  }
+  .moveIcon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .cardGameContainer {
+    width: 100px;
+    height: 65px;
+  }
+
+  .backCard .iconStatic {
+    object-fit: cover;
+    width: 30px;
+    max-width: 100%;
+    height: 30px;
+    max-height: 60%;
+  }
+
+  .backCard > h5 {
+    font-size: 10px;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .sectionOvelay > h3 {
+    font-size: 18px;
+  }
+
+  .playButton {
+    width: 120px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 584px) {
+  .section .gameArea {
+    width: 99%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  #gameIntro > h1 {
+    font-size: 18px;
+  }
+  .moveIcon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cardGameContainer {
+    width: 80px;
+    height: 55px;
+  }
+
+  .backCard .iconStatic {
+    object-fit: cover;
+    width: 25px;
+    max-width: 100%;
+    height: 25px;
+    max-height: 60%;
+  }
+
+  .backCard > h5 {
+    font-size: 6px;
+    margin-top: 4px;
+    text-align: center;
+  }
+
+  .sectionOvelay > h3 {
+    font-size: 16px;
+  }
+
+  .playButton {
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .gameArea > h3 {
+    font-size: 14px;
+  }
+}

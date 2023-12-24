@@ -8,6 +8,7 @@ import Popup from "../../component/Popup";
 import success from "../../asset/data/game-success.json";
 import successFr from "../../asset//data/fr/game-success.json";
 import { useTranslation } from "react-i18next";
+import "./GameScreen.css";
 
 const GameScreen = ({ cardItems, setCardItems, setIsWinner }) => {
   const { t, i18n } = useTranslation();

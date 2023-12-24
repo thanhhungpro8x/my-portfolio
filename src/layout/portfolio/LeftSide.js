@@ -4,6 +4,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
+import DownloadForOfflineIcon from "@mui/icons-material/DownloadForOffline";
 import Aux from "../../component/Aux";
 // import data from "../../asset/data/leftside.json";
 import { useTranslation } from "react-i18next";
@@ -65,6 +66,11 @@ const LeftSideHome = () => {
           <li>
             <a href={t("leftside:linkedIn")}>
               <LinkedInIcon />
+            </a>
+          </li>
+          <li>
+            <a href={t("leftside:linkedIn")}>
+              <DownloadForOfflineIcon />
             </a>
           </li>
         </ul>
