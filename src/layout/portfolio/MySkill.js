@@ -16,7 +16,7 @@ const MySkill = () => {
 
   return (
     <Aux>
-      <section className="mySkillsArea pageSection scrollToPage" id="skills">
+      <section tabIndex={4} className="mySkillsArea pageSection" id="skills">
         <div className="customContainer">
           <div className="mySkillsContent contentWidth">
             <div className="sectionHeader">

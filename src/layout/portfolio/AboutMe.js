@@ -14,7 +14,7 @@ const AboutMe = () => {
   }, []);
   return (
     <Aux>
-      <section className="aboutMeArea scrollToPage" id="about">
+      <section tabIndex={1} className="aboutMeArea" id="about">
         <div className="customContainer">
           <div className="aboutMeContent contentWidth">
             <div className="sectionHeader">

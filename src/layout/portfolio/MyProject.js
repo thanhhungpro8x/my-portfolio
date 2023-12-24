@@ -37,6 +37,7 @@ const MyProject = () => {
   return (
     <Aux>
       <section
+        tabIndex={5}
         className="portfolioArea pageSection scrollToPage"
         id="portfolio"
       >

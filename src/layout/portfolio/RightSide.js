@@ -124,6 +124,22 @@ const RightSideHome = () => {
                     <span>{t("rightside:contactMenu")}</span>
                   </a>
                 </li>
+                <li>
+                  <a
+                    className="scrollTo"
+                    href={t("rightside:linkCv")}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={removeActive}
+                  >
+                    <DynamicIcon
+                      iconName={"DownloadForOffline"}
+                      fontSizeValue={"medium"}
+                      marginValue="5px"
+                    />{" "}
+                    <span>{t("rightside:myCv")}</span>
+                  </a>
+                </li>
               </ul>
             </div>
 

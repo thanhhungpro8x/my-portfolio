@@ -69,7 +69,7 @@ const LeftSideHome = () => {
             </a>
           </li>
           <li>
-            <a href={t("leftside:linkedIn")}>
+            <a href={t("leftside:linkCv")} target="_blank" rel="noreferrer">
               <DownloadForOfflineIcon />
             </a>
           </li>

@@ -3,20 +3,42 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Aux from "./component/Aux";
 import RootLayout from "./layout/RootLayout";
 import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import { Suspense } from "react";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { useState } from "react";
+import MyChallenge from "./layout/game/MyChallenge";
+import MainPortfolioContent from "./layout/portfolio/MainPortfolioContent";
+import { IS_PLAYED } from "./constant";
 
 function App() {
-  const { t, i18n } = useTranslation();
+  const [isPlay] = useState(localStorage.getItem(IS_PLAYED));
 
   useEffect(() => {
     document.title = "Thanh Hung DOAN - Site";
-    // console.log(i18n.t("intro_name"));
   }, []);
+
+  const appRouterConfig = createBrowserRouter([
+    {
+      path: "/",
+      element: <RootLayout />,
+      children: [
+        {
+          path: "",
+          element: [<MyChallenge isPlay={isPlay} />],
+        },
+        {
+          path: "/profile",
+          element: <MainPortfolioContent />,
+        },
+      ],
+    },
+  ]);
+
   return (
     <Suspense fallback="...loading">
       <Aux>
-        <RootLayout />
+        <RouterProvider router={appRouterConfig} />
       </Aux>
     </Suspense>
   );

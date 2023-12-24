@@ -8,14 +8,31 @@ import data from "../../asset/data/game.json";
 import GameScreen from "./GameScreen";
 import GameIntro from "./GameIntro";
 import "./ChallengeResponsive.css";
+import { useNavigate } from "react-router-dom";
+import { IS_PLAYED } from "../../constant";
 
-const MyChallenge = ({ setIsWinner }) => {
+const MyChallenge = ({ isPlay }) => {
   const [cardItems, setCardItems] = useState(data);
+  const [isWinner, setIsWinner] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     document.title = "😉 DOAN - Game Challenge";
     AOS.init({ duration: 1000 });
   }, []);
+
+  useEffect(() => {
+    if (isPlay) {
+      navigate("/profile#home", { replace: true });
+    }
+  }, [isPlay, navigate]);
+
+  useEffect(() => {
+    if (isWinner) {
+      localStorage.setItem(IS_PLAYED, isWinner);
+      navigate("/profile#home", { replace: true });
+    }
+  }, [isWinner, navigate]);
 
   return (
     <Aux>

@@ -21,7 +21,7 @@ const MyCV = () => {
   }, []);
   return (
     <Aux>
-      <section className="resumeArea pageSection scrollToPage" id="resume">
+      <section tabIndex={2} className="resumeArea pageSection" id="resume">
         <div className="customContainer">
           <div className="resumeContent contentWidth">
             <div className="sectionHeader">
