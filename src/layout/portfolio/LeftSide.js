@@ -9,6 +9,7 @@ import Aux from "../../component/Aux";
 // import data from "../../asset/data/leftside.json";
 import { useTranslation } from "react-i18next";
 import IconStatic from "../../component/IconStatic";
+import React from "react";
 
 const LeftSideHome = () => {
   const { t, i18n } = useTranslation();

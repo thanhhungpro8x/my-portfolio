@@ -5,8 +5,9 @@ import "aos/dist/aos.css";
 import Aux from "../../component/Aux";
 import DynamicIcon from "../../component/DynamicIcon";
 import IconStatic from "../../component/IconStatic";
-import skills from "../../asset/data/skills.json";
+import skills from "../../asset/data/en/skills.json";
 import { useTranslation } from "react-i18next";
+import React from "react";
 
 const MySkill = () => {
   const { t } = useTranslation();

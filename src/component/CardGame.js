@@ -2,6 +2,7 @@ import Aux from "./Aux";
 import "./CardGame.css";
 import { useState, useEffect } from "react";
 import IconStatic from "./IconStatic";
+import React from "react";
 
 const CardGame = (props) => {
   const { item, handleFlipCard, cardNotMatches, matchedItems } = props;
@@ -26,7 +27,7 @@ const CardGame = (props) => {
     setTimeout(() => {
       if (cardNotMatches && cardNotMatches.length === 2) {
         if (cardNotMatches.includes(myState)) {
-          console.log(myState, " here are cards not matched", cardNotMatches);
+          // console.log(myState, " here are cards not matched", cardNotMatches);
           setMyState({ ...myState, open: false });
         }
       }

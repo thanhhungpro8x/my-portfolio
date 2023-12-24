@@ -5,10 +5,11 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Popup from "../../component/Popup";
-import success from "../../asset/data/game-success.json";
-import successFr from "../../asset//data/fr/game-success.json";
+import success from "../../asset/data/en/game-success.json";
+import successFr from "../../asset/data/fr/game-success.json";
 import { useTranslation } from "react-i18next";
 import "./GameScreen.css";
+import React from "react";
 
 const GameScreen = ({ cardItems, setCardItems, setIsWinner }) => {
   const { t, i18n } = useTranslation();

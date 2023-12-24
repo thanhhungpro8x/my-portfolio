@@ -4,12 +4,13 @@ import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import GameNav from "./GameNav";
-import data from "../../asset/data/game.json";
+import data from "../../asset/data/en/game.json";
 import GameScreen from "./GameScreen";
 import GameIntro from "./GameIntro";
 import "./ChallengeResponsive.css";
 import { useNavigate } from "react-router-dom";
 import { IS_PLAYED } from "../../constant";
+import React from "react";
 
 const MyChallenge = ({ isPlay }) => {
   const [cardItems, setCardItems] = useState(data);

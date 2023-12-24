@@ -30,6 +30,7 @@
     "react-router-dom": "^6.21.1",
     "react-scripts": "5.0.1",
     "use-sound": "^4.0.1",
+    "uuid": "^9.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -38,7 +39,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "i18n:extract": "i18next-scanner --config ./src/i18n/i18n.config.js",
-    "scan-i18n": "i18next-scanner"
+    "scan-i18n": "i18next-scanner",
+    "webpack": "webpack",
+    "startpack": "webpack serve --mode development --open"
   },
   "eslintConfig": {
     "extends": [
@@ -59,6 +62,10 @@
     ]
   },
   "devDependencies": {
-    "terser-webpack-plugin": "^5.3.9"
+    "copy-webpack-plugin": "^11.0.0",
+    "terser-webpack-plugin": "^5.3.9",
+    "url-loader": "^4.1.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }

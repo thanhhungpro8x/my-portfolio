@@ -2,6 +2,7 @@ import Aux from "../../component/Aux";
 import IconStatic from "../../component/IconStatic";
 // import game from "../../asset/data/intro.json";
 import { useTranslation } from "react-i18next";
+import React from "react";
 
 const GameIntro = () => {
   const { t } = useTranslation();

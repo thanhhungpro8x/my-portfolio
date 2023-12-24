@@ -5,8 +5,9 @@ import "aos/dist/aos.css";
 import Aux from "../../component/Aux";
 import DynamicIcon from "../../component/DynamicIcon";
 import worksFr from "../../asset/data/fr/work-exp.json";
-import worksEn from "../../asset/data/work-exp.json";
+import worksEn from "../../asset/data/en/work-exp.json";
 import { useTranslation } from "react-i18next";
+import React from "react";
 
 const MyCV = () => {
   const { t, i18n } = useTranslation();

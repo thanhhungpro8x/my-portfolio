@@ -7,8 +7,9 @@ import Aux from "../../component/Aux";
 import DynamicIcon from "../../component/DynamicIcon";
 import { useEffect } from "react";
 import projectsFr from "../../asset/data/fr/project.json";
-import projectsEn from "../../asset/data/project.json";
+import projectsEn from "../../asset/data/en/project.json";
 import { useTranslation } from "react-i18next";
+import React from "react";
 
 const MyProject = () => {
   const { t, i18n } = useTranslation();

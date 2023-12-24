@@ -1,6 +1,7 @@
 import useSound from "use-sound";
 import Aux from "./Aux";
 import { memo, useEffect } from "react";
+import React from "react";
 
 const SoundPlay = memo(({ soundFileName, isPlay }) => {
   const soundList = require.context("../asset/sound/");

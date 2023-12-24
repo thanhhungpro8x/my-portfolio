@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import DynamicIcon from "../../component/DynamicIcon";
 // import data from "../../asset/data/about-me.json";
 import { useTranslation } from "react-i18next";
+import React from "react";
 
 const AboutMe = () => {
   const { t } = useTranslation();

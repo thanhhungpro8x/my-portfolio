@@ -39,7 +39,7 @@
 
   .playButton {
     width: 230px;
-    height: 80px;
+    height: auto;
     font-size: 32px;
   }
   .popupTitle {
@@ -100,7 +100,7 @@
 
   .playButton {
     width: 200px;
-    height: 80px;
+    height: auto;
     font-size: 28px;
   }
   .popupTitle {
@@ -161,7 +161,7 @@
 
   .playButton {
     width: 170px;
-    height: 48px;
+    height: auto;
     font-size: 24px;
   }
 
@@ -223,7 +223,7 @@
 
   .playButton {
     width: 168px;
-    height: 46px;
+    height: auto;
     font-size: 22px;
   }
   .fixedBackground {
@@ -298,7 +298,7 @@
 
   .playButton {
     width: 160px;
-    height: 40px;
+    height: auto;
     font-size: 20px;
   }
   .fixedBackground {
@@ -373,7 +373,7 @@
 
   .playButton {
     width: 140px;
-    height: 40px;
+    height: auto;
     font-size: 18px;
   }
   .fixedBackground {
@@ -444,6 +444,7 @@
   .playButton {
     width: 120px;
     font-size: 16px;
+    height: auto;
   }
   .fixedBackground {
     position: fixed;
@@ -517,6 +518,7 @@
   .playButton {
     width: 100px;
     font-size: 14px;
+    height: auto;
   }
 
   .gameArea > h3 {

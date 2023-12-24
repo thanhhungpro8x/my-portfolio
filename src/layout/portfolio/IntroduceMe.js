@@ -6,6 +6,7 @@ import Aux from "../../component/Aux";
 import DynamicIcon from "../../component/DynamicIcon";
 // import data from "../../asset/data/introduction.json";
 import { useTranslation } from "react-i18next";
+import React from "react";
 
 const IntroduceMe = () => {
   const { t } = useTranslation();

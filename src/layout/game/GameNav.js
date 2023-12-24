@@ -1,5 +1,6 @@
 import Aux from "../../component/Aux";
 import DynamicIcon from "../../component/DynamicIcon";
+import React from "react";
 
 const GameNav = () => {
   return (

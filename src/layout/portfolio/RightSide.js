@@ -6,6 +6,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 // import data from "../../asset/data/rightside.json";
 import { useTranslation } from "react-i18next";
+import React from "react";
 
 const RightSideHome = () => {
   const { t } = useTranslation();

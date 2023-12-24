@@ -9,6 +9,7 @@ import {
   DialogContentText,
   DialogActions,
 } from "@mui/material";
+import React from "react";
 
 const Popup = ({ modalState, handleCloseModal, handleOkModal }) => {
   useEffect(() => {

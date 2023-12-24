@@ -11,6 +11,7 @@ import "./PortfolioResponsive.css";
 import RightSideHome from "./RightSide";
 import ScrollNav from "./ScrollNav";
 import { useEffect } from "react";
+import React from "react";
 
 const MainPortfolioContent = () => {
   useEffect(() => {

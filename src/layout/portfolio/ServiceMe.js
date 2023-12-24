@@ -5,8 +5,9 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import DynamicIcon from "../../component/DynamicIcon";
 import servicesFr from "../../asset/data/fr/work-service.json";
-import servicesEn from "../../asset/data/work-service.json";
+import servicesEn from "../../asset/data/en/work-service.json";
 import { useTranslation } from "react-i18next";
+import React from "react";
 
 const ServiceMe = () => {
   const { t, i18n } = useTranslation("work-service");
