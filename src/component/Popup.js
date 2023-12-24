@@ -23,14 +23,19 @@ const Popup = ({ modalState, handleCloseModal, handleOkModal }) => {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">{modalState.title}</DialogTitle>
+        <DialogTitle id="alert-dialog-title" className="popupTitle">
+          {modalState.title}
+        </DialogTitle>
         <DialogContent>
-          <DialogContentText id="alert-dialog-description">
+          <DialogContentText
+            id="alert-dialog-description"
+            className="popupDescription"
+          >
             {modalState.description}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleOkModal} autoFocus>
+          <Button className="popupBtn" onClick={handleOkModal} autoFocus>
             {modalState.labelOk}
           </Button>
         </DialogActions>

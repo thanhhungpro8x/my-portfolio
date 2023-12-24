@@ -42,6 +42,17 @@
     height: 80px;
     font-size: 32px;
   }
+  .popupTitle {
+    font-size: 1.3rem !important;
+  }
+
+  .popupDescription {
+    font-size: 1.2rem !important;
+  }
+
+  .popupBtn {
+    font-size: 1.2rem !important;
+  }
 }
 
 @media only screen and (min-width: 1556px) and (max-width: 2000px) {
@@ -87,6 +98,17 @@
     width: 200px;
     height: 80px;
     font-size: 28px;
+  }
+  .popupTitle {
+    font-size: 1.2rem !important;
+  }
+
+  .popupDescription {
+    font-size: 1.1rem !important;
+  }
+
+  .popupBtn {
+    font-size: 1rem !important;
   }
 }
 
@@ -134,6 +156,18 @@
     height: 48px;
     font-size: 24px;
   }
+
+  .popupTitle {
+    font-size: 1.2rem !important;
+  }
+
+  .popupDescription {
+    font-size: 1.1rem !important;
+  }
+
+  .popupBtn {
+    font-size: 1rem !important;
+  }
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1120px) {
@@ -179,6 +213,30 @@
     width: 168px;
     height: 46px;
     font-size: 22px;
+  }
+  .fixedBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./../../asset/bg/louvrebg.jpg") center/cover no-repeat
+      fixed;
+  }
+  .backCard {
+    background-color: #1f4573;
+  }
+
+  .popupTitle {
+    font-size: 1.1rem !important;
+  }
+
+  .popupDescription {
+    font-size: 1rem !important;
+  }
+
+  .popupBtn {
+    font-size: 0.8rem !important;
   }
 }
 
@@ -226,6 +284,30 @@
     height: 40px;
     font-size: 20px;
   }
+  .fixedBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./../../asset/bg/louvrebg.jpg") center/cover no-repeat
+      fixed;
+  }
+  .backCard {
+    background-color: #1f4573;
+  }
+
+  .popupTitle {
+    font-size: 1.1rem !important;
+  }
+
+  .popupDescription {
+    font-size: 1rem !important;
+  }
+
+  .popupBtn {
+    font-size: 0.8rem !important;
+  }
 }
 
 @media (max-width: 787px) {
@@ -272,6 +354,29 @@
     height: 40px;
     font-size: 18px;
   }
+  .fixedBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./../../asset/bg/louvrebg.jpg") center/cover no-repeat
+      fixed;
+  }
+  .backCard {
+    background-color: #1f4573;
+  }
+  .popupDescription {
+    font-size: 0.8rem !important;
+  }
+
+  .popupTitle {
+    font-size: 1rem !important;
+  }
+
+  .popupBtn {
+    font-size: 0.6rem !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -298,9 +403,9 @@
 
   .backCard .iconStatic {
     object-fit: cover;
-    width: 30px;
+    width: 32px;
     max-width: 100%;
-    height: 30px;
+    height: 32px;
     max-height: 60%;
   }
 
@@ -317,6 +422,29 @@
   .playButton {
     width: 120px;
     font-size: 16px;
+  }
+  .fixedBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./../../asset/bg/louvrebg.jpg") center/cover no-repeat
+      fixed;
+  }
+  .backCard {
+    background-color: #1f4573;
+  }
+  .popupDescription {
+    font-size: 0.8rem !important;
+  }
+
+  .popupTitle {
+    font-size: 1rem !important;
+  }
+
+  .popupBtn {
+    font-size: 0.6rem !important;
   }
 }
 @media (max-width: 584px) {
@@ -337,20 +465,20 @@
   }
 
   .cardGameContainer {
-    width: 80px;
-    height: 55px;
+    width: 90px;
+    height: 60px;
   }
 
   .backCard .iconStatic {
     object-fit: cover;
-    width: 25px;
+    width: 30px;
     max-width: 100%;
-    height: 25px;
+    height: 30px;
     max-height: 60%;
   }
 
   .backCard > h5 {
-    font-size: 6px;
+    font-size: 8px;
     margin-top: 4px;
     text-align: center;
   }
@@ -366,5 +494,31 @@
 
   .gameArea > h3 {
     font-size: 14px;
+  }
+
+  .fixedBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./../../asset/bg/louvrebg.jpg") center/cover no-repeat
+      fixed;
+  }
+
+  .backCard {
+    background-color: #1f4573;
+  }
+
+  .popupDescription {
+    font-size: 0.8rem !important;
+  }
+
+  .popupTitle {
+    font-size: 1rem !important;
+  }
+
+  .popupBtn {
+    font-size: 0.6rem !important;
   }
 }

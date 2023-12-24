@@ -4,12 +4,6 @@
   position: absolute;
 }
 
-.gameContainer {
-  /* gap: 10vh;
-  display: flex;
-  flex-direction: column; */
-}
-
 .fixedBackground {
   position: fixed;
   top: 0;
