@@ -24,7 +24,7 @@ const LeftSideHome = () => {
 
   return (
     <Aux>
-      <div className="leftSidebar">
+      <div className="leftSidebar" id="leftSidebar">
         <div className="languageContainer d-flex align-items-center justify-content-left">
           <a href="#french" onClick={() => handleChangeLang("fr")} alt="French">
             <IconStatic iconName={"france.png"} iconAlt={"French"} />

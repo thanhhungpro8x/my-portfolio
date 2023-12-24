@@ -16,7 +16,7 @@
   }
   .moveIcon {
     width: 150px;
-    height: 180px;
+    height: 220px;
   }
 
   .backCard .iconStatic {
@@ -53,6 +53,10 @@
   .popupBtn {
     font-size: 1.2rem !important;
   }
+  .moveIcon > a > .iconStatic {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media only screen and (min-width: 1556px) and (max-width: 2000px) {
@@ -73,7 +77,7 @@
   }
   .moveIcon {
     width: 120px;
-    height: 120px;
+    height: 200px;
   }
 
   .backCard .iconStatic {
@@ -110,6 +114,10 @@
   .popupBtn {
     font-size: 1rem !important;
   }
+  .moveIcon > a > .iconStatic {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media only screen and (min-width: 1121px) and (max-width: 1555px) {
@@ -130,7 +138,7 @@
   }
   .moveIcon {
     width: 90px;
-    height: 90px;
+    height: 140px;
   }
 
   .backCard .iconStatic {
@@ -168,6 +176,10 @@
   .popupBtn {
     font-size: 1rem !important;
   }
+  .moveIcon > a > .iconStatic {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1120px) {
@@ -188,7 +200,7 @@
   }
   .moveIcon {
     width: 85px;
-    height: 85px;
+    height: 120px;
   }
 
   .backCard .iconStatic {
@@ -238,6 +250,11 @@
   .popupBtn {
     font-size: 0.8rem !important;
   }
+
+  .moveIcon > a > .iconStatic {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -258,7 +275,7 @@
   }
   .moveIcon {
     width: 82px;
-    height: 82px;
+    height: 120px;
   }
 
   .backCard .iconStatic {
@@ -308,6 +325,11 @@
   .popupBtn {
     font-size: 0.8rem !important;
   }
+
+  .moveIcon > a > .iconStatic {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (max-width: 787px) {
@@ -328,7 +350,7 @@
   }
   .moveIcon {
     width: 80px;
-    height: 80px;
+    height: 120px;
   }
 
   .backCard .iconStatic {
@@ -393,7 +415,7 @@
   }
   .moveIcon {
     width: 65px;
-    height: 65px;
+    height: 100px;
   }
 
   .cardGameContainer {
@@ -446,6 +468,11 @@
   .popupBtn {
     font-size: 0.6rem !important;
   }
+
+  .moveIcon > a > .iconStatic {
+    width: 100%;
+    height: 100%;
+  }
 }
 @media (max-width: 584px) {
   .section .gameArea {
@@ -461,7 +488,7 @@
   }
   .moveIcon {
     width: 60px;
-    height: 60px;
+    height: 100px;
   }
 
   .cardGameContainer {
@@ -520,5 +547,10 @@
 
   .popupBtn {
     font-size: 0.6rem !important;
+  }
+
+  .moveIcon > a > .iconStatic {
+    width: 100%;
+    height: 100%;
   }
 }

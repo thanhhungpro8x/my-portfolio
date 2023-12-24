@@ -15,7 +15,9 @@ import { useEffect } from "react";
 const MainPortfolioContent = () => {
   useEffect(() => {
     document.title = "😉 DOAN - Portfolio";
-    document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+    document
+      .getElementById("leftSidebar")
+      .scrollIntoView({ behavior: "smooth" });
   }, []);
   return (
     <main className="doanPortfolioMain">
