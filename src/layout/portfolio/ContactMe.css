@@ -119,3 +119,8 @@
   margin-bottom: 0;
   margin-top: 18px;
 }
+
+.errorMsg {
+  color: red;
+  font-size: small;
+}

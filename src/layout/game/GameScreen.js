@@ -36,6 +36,10 @@ const GameScreen = ({ cardItems, setCardItems, setIsWinner }) => {
   }, []);
 
   useEffect(() => {
+    setModalState(languages[i18n.language]);
+  }, [i18n.language]);
+
+  useEffect(() => {
     const timer =
       countdown > 0 && setInterval(() => setCountdown(countdown - 1), 1000);
     if (countdown === 0) {

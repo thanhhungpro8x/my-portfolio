@@ -13,5 +13,9 @@
   "contactFullnamePlace": "Your Full Name",
   "contactEmailPlace": "Your email adress",
   "contactPhonePlace": "Your number phone",
-  "contactMessagePlace": "Wrire your message here ..."
+  "contactMessagePlace": "Wrire your message here ...",
+  "errorContactFullname": "Full name is required!",
+  "errorContactEmail": "Your email is required, which will allow me able to reply you once!",
+  "errorContactSubject": "Subject is required!",
+  "errorContactMessage": "Let me know the reason why you write this to me!"
 }
