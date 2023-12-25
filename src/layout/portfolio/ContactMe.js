@@ -9,10 +9,27 @@ import { useTranslation } from "react-i18next";
 import React from "react";
 import emailjs from "@emailjs/browser";
 import * as yup from "yup";
+import { Snackbar, Alert } from "@mui/material";
+import Spinner from "../../component/Spinner";
+
+const initialForm = {
+  fullName: "",
+  email: "",
+  subject: "",
+  phoneNumber: "***",
+  message: "",
+};
 
 const ContactMe = () => {
   const { t } = useTranslation();
   const [errors, setErrors] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [formData, setFormData] = useState({ ...initialForm });
+  const [snackBar, setSnackBar] = useState({
+    open: false,
+    message: "",
+    severity: undefined,
+  });
 
   const contactFormSchema = yup.object().shape({
     fullName: yup.string().required(t("contact:errorContactFullname")),
@@ -28,19 +45,9 @@ const ContactMe = () => {
   const handleSendEmail = (e) => {
     e.preventDefault();
 
-    const formData = {
-      toName: "Thanh Hung DOAN",
-      fullName: e.target.fullName.value,
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      phoneNumber: e.target.phoneNumber.value
-        ? e.target.phoneNumber.value
-        : "***",
-      message: e.target.message.value,
-    };
-
-    console.log(formData);
     try {
+      // console.log(loading);
+      setLoading(!loading);
       contactFormSchema.validateSync(formData, {
         abortEarly: false,
       });
@@ -54,11 +61,24 @@ const ContactMe = () => {
         )
         .then(
           (result) => {
-            console.log(result);
+            // console.log(result);
+            setSnackBar({
+              open: true,
+              message: t("contact:contactSuccess"),
+              severity: "success",
+            });
             setErrors(null);
+            setFormData({ ...initialForm });
+            setLoading(false);
           },
           (error) => {
-            console.log(error);
+            setSnackBar({
+              open: true,
+              message: t("contact:contactSentError"),
+              severity: "error",
+            });
+            setLoading(false);
+            // console.log(error);
           }
         );
     } catch (validationError) {
@@ -69,9 +89,18 @@ const ContactMe = () => {
           errorsObj[error.path] = error.message;
         });
       }
+      setSnackBar({
+        open: true,
+        message: t("contact:contactRequired"),
+        severity: "error",
+      });
       setErrors(errorsObj);
-      console.log(errorsObj);
+      setLoading(false);
     }
+  };
+
+  const onCloseSnackbar = () => {
+    setSnackBar({ open: false, message: "", severity: undefined });
   };
 
   return (
@@ -125,6 +154,10 @@ const ContactMe = () => {
                       type="text"
                       name="fullName"
                       id="fullName"
+                      value={formData.fullName}
+                      onChange={(e) =>
+                        setFormData({ ...formData, fullName: e.target?.value })
+                      }
                       placeholder={t("contact:contactFullnamePlace")}
                     />
                     <p className="errorMsg">{errors?.fullName}</p>
@@ -140,6 +173,10 @@ const ContactMe = () => {
                       type="email"
                       name="email"
                       id="email"
+                      value={formData.email}
+                      onChange={(e) =>
+                        setFormData({ ...formData, email: e.target?.value })
+                      }
                       placeholder={t("contact:contactEmailPlace")}
                     />
                     <p className="errorMsg">{errors?.email}</p>
@@ -155,6 +192,13 @@ const ContactMe = () => {
                       type="text"
                       name="phoneNumber"
                       id="phoneNumber"
+                      value={formData.phoneNumber}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          phoneNumber: e.target?.value,
+                        })
+                      }
                       placeholder={t("contact:contactPhonePlace")}
                     />
                     <p className="errorMsg"></p>
@@ -166,8 +210,15 @@ const ContactMe = () => {
                       {t("contact:contactSubject")}
                       <sup>*</sup>
                     </label>
-                    <select name="subject" id="subject">
-                      {/* <option value="">Select a subject</option> */}
+                    <select
+                      name="subject"
+                      id="subject"
+                      value={formData.subject}
+                      onChange={(e) =>
+                        setFormData({ ...formData, subject: e.target.value })
+                      }
+                    >
+                      <option value="">Select a subject</option>
                       <option value="Exchange">Exchange</option>
                       <option value="Contract Long Term">
                         Contract Long Term
@@ -177,6 +228,7 @@ const ContactMe = () => {
                       </option>
                       <option value="Fix Price">Fix Price</option>
                     </select>
+                    <p className="errorMsg">{errors?.subject}</p>
                   </div>
                 </div>
 
@@ -189,6 +241,13 @@ const ContactMe = () => {
                     <textarea
                       name="message"
                       id="message"
+                      value={formData.message}
+                      onChange={(e) =>
+                        setFormData({
+                          ...formData,
+                          message: e.target?.value,
+                        })
+                      }
                       placeholder={t("contact:contactMessagePlace")}
                     ></textarea>
                     <p className="errorMsg">{errors?.message}</p>
@@ -214,12 +273,13 @@ const ContactMe = () => {
                   </div>
                 </div> */}
                 <div className="col-md-12">
+                  {loading ? <Spinner spinMode={"spinnerContainerOver"} /> : ""}
                   <div className="inputFieldGroup submitBtnWrap">
                     <button
                       className="themeBtn"
                       name="submit"
                       type="submit"
-                      id="submit-form"
+                      id="submitForm"
                     >
                       {t("contact:contactSend")}
                     </button>
@@ -230,6 +290,19 @@ const ContactMe = () => {
           </div>
         </div>
       </section>
+      <Snackbar
+        open={snackBar.open}
+        autoHideDuration={6000}
+        onClose={onCloseSnackbar}
+      >
+        <Alert
+          onClose={onCloseSnackbar}
+          severity={snackBar.severity ? snackBar.severity : "success"}
+          sx={{ width: "100%" }}
+        >
+          {snackBar.message}
+        </Alert>
+      </Snackbar>
     </Aux>
   );
 };

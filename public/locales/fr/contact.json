@@ -17,5 +17,7 @@
   "errorContactFullname": "Le nom complet est requis !",
   "errorContactEmail": "Votre adresse e-mail est requise pour que je puisse vous répondre !",
   "errorContactSubject": "Le sujet est requis !",
-  "errorContactMessage": "Faites-moi savoir la raison pour laquelle vous me contactez !"
+  "errorContactMessage": "Faites-moi savoir la raison pour laquelle vous me contactez !",
+  "contactSuccess": "Votre message a été envoyé avec succès.",
+  "contactSentError": "Votre message n'a pas pu être envoyé avec succès."
 }

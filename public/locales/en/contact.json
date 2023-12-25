@@ -17,5 +17,7 @@
   "errorContactFullname": "Full name is required!",
   "errorContactEmail": "Your email is required, which will allow me able to reply you once!",
   "errorContactSubject": "Subject is required!",
-  "errorContactMessage": "Let me know the reason why you write this to me!"
+  "errorContactMessage": "Let me know the reason why you write this to me!",
+  "contactSuccess": " Your message was sent successfully.",
+  "contactSentError": " Your message couldn't sent successfully."
 }

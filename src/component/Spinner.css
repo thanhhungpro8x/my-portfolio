@@ -1,0 +1,41 @@
+.spinnerContainerOver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 2;
+  background-color: rgba(41, 30, 30, 0.7);
+}
+
+.spinnerContainerRelative {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(45, 44, 44, 0.7);
+}
+
+.spinnerContainerAbsolute {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(45, 42, 42, 0.7);
+}
