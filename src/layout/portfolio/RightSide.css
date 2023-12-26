@@ -119,7 +119,7 @@
   opacity: 1;
   visibility: visible;
 }
-.customGlobalColor .inner .overlay,
+
 .responsiveSidebarMenu .overlay {
   position: absolute;
   left: 0;
@@ -192,7 +192,7 @@
 .responsiveSidebarMenu .sidebarMenuInner .menuWrap .menu li a.active span {
   color: #fff;
 }
-.responsiveSidebarMenu .sidebarMenuInner .customGlobalColorOption,
+.responsiveSidebarMenu .sidebarMenuInner,
 .responsiveSidebarMenu .sidebarMenuInner .sidebarSocial {
   width: 46%;
   margin: auto;

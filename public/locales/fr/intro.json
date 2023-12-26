@@ -1,7 +1,10 @@
 {
   "introName": "Prêt pour un défi unique avant de plonger dans mon portfolio ? Jouez à un jeu de mémoire personnalisé et explorez la créativité derrière mon travail. Cliquez sur le lien ci-dessous pour vous lancer dans ce voyage captivant !",
   "moveToGame": "Passer au jeu",
-  "gameQuestion": "Êtes-vous prêt à explorer mon profil ?",
+  "gameQuestion": "Êtes-vous prêt à explorer mes compétences ?",
   "playGameButton": "Jouer",
-  "gameInstruction": "Vous avez {{countdown}} secondes pour mémoriser la carte !"
+  "gameInstruction": "Vous avez {{countdown}} secondes pour mémoriser la carte !",
+  "skipGameButton": "Si cela ne vous plaît pas, passez à ce jeu !",
+  "gameEasyMode": "Mode Facile",
+  "gameHardMode": "Mode Difficile"
 }

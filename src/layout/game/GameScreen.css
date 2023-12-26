@@ -1,0 +1,22 @@
+.skipGame {
+  z-index: 20;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.skipGame span {
+  color: beige;
+  font-size: smaller;
+}
+
+.skipGame:hover {
+  color: rgb(125, 122, 147);
+}
+
+.skipGame > span:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
+  color: rgb(125, 122, 147);
+}

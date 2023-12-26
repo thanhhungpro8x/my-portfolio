@@ -10,16 +10,46 @@ import ContactMe from "./ContactMe";
 import "./PortfolioResponsive.css";
 import RightSideHome from "./RightSide";
 import ScrollNav from "./ScrollNav";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import React from "react";
 
 const MainPortfolioContent = () => {
+  const [screenSize, setScreenSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  const handleResize = () => {
+    setScreenSize({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  };
+
   useEffect(() => {
     document.title = "😉 DOAN - Portfolio";
-    document
-      .getElementById("leftSidebar")
-      .scrollIntoView({ behavior: "smooth" });
+    // document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+
+    // Attach the event listener when the component mounts
+    window.addEventListener("resize", handleResize);
+
+    // Detach the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
+
+  useEffect(() => {
+    // console.log("Width: ", screenSize.width, "Height: ", screenSize.height);
+    if (screenSize.width <= 1220) {
+      document
+        .getElementById("leftSidebar")
+        .scrollIntoView({ behavior: "smooth" });
+    } else {
+      document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+    }
+  }, [screenSize]);
+
   return (
     <main className="doanPortfolioMain">
       <div id="smoothWrapper">

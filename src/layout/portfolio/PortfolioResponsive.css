@@ -198,32 +198,7 @@
   .portfolioHeaderArea nav .portfolioNavMenu li.active > .dropdown {
     display: block;
   }
-  .customGlobalColor .inner .customGlobalColorOption h2 {
-    margin-bottom: 60px;
-  }
-  .customGlobalColor .inner .customGlobalColorOption {
-    padding: 100px 50px;
-  }
-  .customGlobalColor .customGlobalColorOption .colorBoxed {
-    margin-bottom: 50px;
-    padding-top: 10px;
-  }
-  .customGlobalColor
-    .inner
-    .customGlobalColorOption
-    .customGlobalColorOptionInner
-    .themes {
-    padding-top: 10px;
-  }
-  .customGlobalColor
-    .inner
-    .customGlobalColorOption
-    .customGlobalColorOptionInner
-    .themes
-    li {
-    margin-right: 40px;
-    margin-bottom: 20px;
-  }
+
   .myServicesItems {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -232,6 +207,7 @@
     width: 100%;
   }
 }
+
 @media (max-width: 584px) {
   .subtitle {
     margin-bottom: 40px;

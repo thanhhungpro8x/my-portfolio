@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "open": true,
+    "icon": "springboot-icon.png",
+    "isWait": true,
+    "name": "SpringBoot"
+  },
+  {
+    "id": 2,
+    "open": true,
+    "icon": "docker-icon.png",
+    "isWait": true,
+    "name": "Docker"
+  },
+  {
+    "id": 3,
+    "open": true,
+    "icon": "jee-icon.png",
+    "isWait": true,
+    "name": "JAVA EE"
+  },
+  {
+    "id": 4,
+    "open": true,
+    "icon": "react-icon.png",
+    "isWait": true,
+    "name": "ReactJS"
+  },
+  {
+    "id": 5,
+    "open": true,
+    "icon": "springframework2-icon.png",
+    "isWait": true,
+    "name": "SpringFramework"
+  },
+  {
+    "id": 6,
+    "open": true,
+    "icon": "springboot-icon.png",
+    "isWait": true,
+    "name": "SpringBoot"
+  },
+  {
+    "id": 7,
+    "open": true,
+    "icon": "react-icon.png",
+    "isWait": true,
+    "name": "ReactJS"
+  },
+  {
+    "id": 8,
+    "open": true,
+    "icon": "jee-icon.png",
+    "isWait": true,
+    "name": "JAVA EE"
+  },
+  {
+    "id": 9,
+    "open": true,
+    "icon": "springframework2-icon.png",
+    "isWait": true,
+    "name": "SpringFramework"
+  },
+  {
+    "id": 10,
+    "open": true,
+    "icon": "docker-icon.png",
+    "isWait": true,
+    "name": "Docker"
+  }
+]

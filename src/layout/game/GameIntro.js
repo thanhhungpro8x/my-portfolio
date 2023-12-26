@@ -1,9 +1,9 @@
+import "./GameIntro.css";
 import Aux from "../../component/Aux";
 import IconStatic from "../../component/IconStatic";
 // import game from "../../asset/data/intro.json";
 import { useTranslation } from "react-i18next";
 import React from "react";
-import styled from "styled-components";
 
 const GameIntro = () => {
   const { t, i18n } = useTranslation();

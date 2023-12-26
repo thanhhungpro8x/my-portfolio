@@ -10,9 +10,18 @@ import successFr from "../../asset/data/fr/game-success.json";
 import { useTranslation } from "react-i18next";
 import "./GameScreen.css";
 import React from "react";
+import GameConfirmation from "../../component/GameConfirmation";
+import DynamicIcon from "../../component/DynamicIcon";
+import { useNavigate } from "react-router-dom";
 
-const GameScreen = ({ cardItems, setCardItems, setIsWinner }) => {
+const GameScreen = ({
+  cardItems,
+  setCardItems,
+  setIsWinner,
+  handleChangeGameMode,
+}) => {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
   const [matchedItems, setMatchedItems] = useState([]);
   const [cardNotMatches, setCardNotMatches] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
@@ -129,12 +138,10 @@ const GameScreen = ({ cardItems, setCardItems, setIsWinner }) => {
     <Aux>
       <div className="section" data-aos="zoom-in" id="gameArea">
         {countdown === -1 ? (
-          <div className="sectionOvelay">
-            <h3>{t("intro:gameQuestion")}</h3>
-            <button className="playButton" onClick={handlePlay}>
-              {t("intro:playGameButton")}
-            </button>
-          </div>
+          <GameConfirmation
+            handlePlay={handlePlay}
+            handleChangeGameMode={handleChangeGameMode}
+          />
         ) : (
           ""
         )}
@@ -161,6 +168,10 @@ const GameScreen = ({ cardItems, setCardItems, setIsWinner }) => {
               />
             );
           })}
+        </div>
+        <div className="skipGame" onClick={() => navigate("profile")}>
+          <span>{t("intro:skipGameButton")}</span>
+          <DynamicIcon iconName={"ArrowForward"} iconstyle={"large"} />
         </div>
       </div>
       <Popup
