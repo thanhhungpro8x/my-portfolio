@@ -26,6 +26,8 @@ const GameScreen = ({
   const [cardNotMatches, setCardNotMatches] = useState([]);
   const [flippedCards, setFlippedCards] = useState([]);
   const [countdown, setCountdown] = useState(-1);
+  const [coundDownSoundName, setCoundDownSoundName] =
+    useState("countdown10-fr.m4a");
   const [playState, setPlayState] = useState({
     isCountDownPlay: false,
     isIncorrectPlay: false,
@@ -46,6 +48,12 @@ const GameScreen = ({
 
   useEffect(() => {
     setModalState(languages[i18n.language]);
+
+    if (i18n.language === "fr") {
+      setCoundDownSoundName("countdown10-fr.m4a");
+    } else if (i18n.language === "en") {
+      setCoundDownSoundName("mixkit-countdown.wav");
+    }
   }, [i18n.language]);
 
   useEffect(() => {
@@ -181,7 +189,7 @@ const GameScreen = ({
       />
       <SoundPlay
         isPlay={playState.isCountDownPlay}
-        soundFileName="mixkit-countdown.wav"
+        soundFileName={coundDownSoundName}
       />
       <SoundPlay
         soundFileName="mixkit-click-error.wav"
