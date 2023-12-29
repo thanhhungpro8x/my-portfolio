@@ -138,6 +138,11 @@ const GameScreen = memo(
       setIsWinner(true);
     };
 
+    const handleSkipGame = () => {
+      setPlayState({ ...initPlayState });
+      navigate("profile", { replace: true });
+    };
+
     return (
       <Aux>
         <div className="section" data-aos="zoom-in" id="gameArea">
@@ -173,7 +178,7 @@ const GameScreen = memo(
               );
             })}
           </div>
-          <div className="skipGame" onClick={() => navigate("profile")}>
+          <div className="skipGame" onClick={() => handleSkipGame()}>
             <span>{t("intro:skipGameButton")}</span>
             <DynamicIcon iconName={"ArrowForward"} iconstyle={"large"} />
           </div>

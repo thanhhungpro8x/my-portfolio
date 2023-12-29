@@ -28,8 +28,7 @@ const MainPortfolioContent = () => {
     width: window.innerWidth,
     height: window.innerHeight,
   });
-
-  const thresholdWidth = 1220;
+  const [initialLoad, setInitialLoad] = useState(true);
 
   const handleResize = () => {
     setScreenSize({
@@ -38,7 +37,7 @@ const MainPortfolioContent = () => {
     });
   };
 
-  const delayedHandleResize = debounce(handleResize, 300);
+  const delayedHandleResize = debounce(handleResize, 200);
 
   useEffect(() => {
     document.title = "😉 DOAN - Portfolio";
@@ -55,14 +54,17 @@ const MainPortfolioContent = () => {
 
   useEffect(() => {
     // console.log("Width: ", screenSize.width, "Height: ", screenSize.height);
-    if (screenSize.width <= thresholdWidth) {
-      document
-        .getElementById("leftSidebar")
-        .scrollIntoView({ behavior: "smooth" });
-    } else {
-      document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+    if (initialLoad) {
+      if (screenSize.width <= 1220) {
+        document
+          .getElementById("leftSidebar")
+          .scrollIntoView({ behavior: "smooth" });
+      } else {
+        document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+      }
+      setInitialLoad(false);
     }
-  }, [screenSize, thresholdWidth]);
+  }, [screenSize, initialLoad]);
 
   return (
     <main className="doanPortfolioMain">
