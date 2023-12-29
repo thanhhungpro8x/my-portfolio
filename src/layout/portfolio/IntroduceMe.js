@@ -15,7 +15,7 @@ const IntroduceMe = () => {
   }, []);
   return (
     <Aux>
-      <section tabIndex={0} className="introduceSection" id="home">
+      <section className="introduceSection" id="home">
         <div className="customContainer">
           <div className="introduceContent contentWidth">
             <div className="sectionHeader">

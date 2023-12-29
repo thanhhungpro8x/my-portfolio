@@ -106,7 +106,6 @@ const ContactMe = () => {
   return (
     <Aux>
       <section
-        tabIndex={6}
         className="contactMeArea pageSection scroll-content"
         id="contact"
       >

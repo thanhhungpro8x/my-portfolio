@@ -17,7 +17,7 @@ const MySkill = () => {
 
   return (
     <Aux>
-      <section tabIndex={4} className="mySkillsArea pageSection" id="skills">
+      <section className="mySkillsArea pageSection" id="skills">
         <div className="customContainer">
           <div className="mySkillsContent contentWidth">
             <div className="sectionHeader">

@@ -6,5 +6,6 @@
   "gameInstruction": "You have {{countdown}} seconds to memorize the card!",
   "skipGameButton": "If you don't like it, skip this game!",
   "gameEasyMode": "Easy Mode",
-  "gameHardMode": "Hard Mode"
+  "gameHardMode": "Hard Mode",
+  "gameCountDownFile": "mixkit-countdown.wav"
 }

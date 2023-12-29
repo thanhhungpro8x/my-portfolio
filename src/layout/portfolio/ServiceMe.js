@@ -24,7 +24,6 @@ const ServiceMe = () => {
   return (
     <Aux>
       <section
-        tabIndex={3}
         className="myServicesArea pageSection scrollToPage"
         id="services"
       >

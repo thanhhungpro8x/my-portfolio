@@ -6,5 +6,6 @@
   "gameInstruction": "Vous avez {{countdown}} secondes pour mémoriser la carte !",
   "skipGameButton": "Si cela ne vous plaît pas, passez à ce jeu !",
   "gameEasyMode": "Mode Facile",
-  "gameHardMode": "Mode Difficile"
+  "gameHardMode": "Mode Difficile",
+  "gameCountDownFile": "countdown10-fr.m4a"
 }

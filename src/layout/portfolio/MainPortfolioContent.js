@@ -13,11 +13,23 @@ import ScrollNav from "./ScrollNav";
 import { useEffect, useState } from "react";
 import React from "react";
 
+const debounce = (func, delay) => {
+  let timeoutId;
+  return (...args) => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      func(...args);
+    }, delay);
+  };
+};
+
 const MainPortfolioContent = () => {
   const [screenSize, setScreenSize] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
   });
+
+  const thresholdWidth = 1220;
 
   const handleResize = () => {
     setScreenSize({
@@ -26,29 +38,31 @@ const MainPortfolioContent = () => {
     });
   };
 
+  const delayedHandleResize = debounce(handleResize, 300);
+
   useEffect(() => {
     document.title = "😉 DOAN - Portfolio";
     // document.getElementById("home").scrollIntoView({ behavior: "smooth" });
 
     // Attach the event listener when the component mounts
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", delayedHandleResize);
 
     // Detach the event listener when the component unmounts
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("resize", delayedHandleResize);
     };
-  }, []);
+  }, [delayedHandleResize]);
 
   useEffect(() => {
     // console.log("Width: ", screenSize.width, "Height: ", screenSize.height);
-    if (screenSize.width <= 1220) {
+    if (screenSize.width <= thresholdWidth) {
       document
         .getElementById("leftSidebar")
         .scrollIntoView({ behavior: "smooth" });
     } else {
       document.getElementById("home").scrollIntoView({ behavior: "smooth" });
     }
-  }, [screenSize]);
+  }, [screenSize, thresholdWidth]);
 
   return (
     <main className="doanPortfolioMain">

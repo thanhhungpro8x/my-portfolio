@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "./GameConfirmation.css";
 import Aux from "./Aux";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { GameModeContext } from "../context/GameModeContext";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
@@ -9,10 +9,6 @@ import Switch from "@mui/material/Switch";
 const GameConfirmation = ({ handlePlay, handleChangeGameMode }) => {
   const { t } = useTranslation();
   const gameMode = useContext(GameModeContext);
-
-  useEffect(() => {
-    console.log("isGameModeEasy: ", gameMode);
-  }, [gameMode]);
 
   return (
     <Aux>
